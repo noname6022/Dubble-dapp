@@ -1,0 +1,137 @@
+.HeaderWrapper{
+    background-color: #865BE3;
+    width: 100vw;
+    height: 14vmin;
+    display: grid;
+    padding-top: 3vmin;
+    grid-template-columns: 17vw 54vw 27vw;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.HeaderLogoStyle{
+    width: 12.7vw;
+    height: 4vmin;
+}
+
+.HeaderLinks{
+    display: grid;
+    grid-template-columns: 13vw 5.5vw 9.5vw 4vw;
+    height: 5.1vmin;
+    width: 36vw;
+    border: black solid 0.17vw;
+    align-items: center;
+    justify-content: start;
+    margin-left: 10vw;
+    margin-top: -0.45vmin;
+    border-radius: 2.3vmin;
+    border-bottom: black solid 0.27vw;
+    justify-items: center;
+}
+
+.HeaderLinks a {
+    text-decoration: none;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 400;
+    color: black;
+    font-size: 1.18vw;
+    display: flex;
+    column-gap: 0.55vw;
+    align-items: center;
+    align-content: center;
+    height: 2.3vmin;
+    text-align: center;
+}
+
+.HeaderLinks a:nth-child(2) {
+    column-gap: 0.43vw;
+}
+
+.HeaderLinks a:nth-child(3) {
+    column-gap: 0.78vw;
+}
+
+.HeaderLinks a:nth-child(4) {
+    column-gap: 0.46vw;
+}
+
+.LinkContainer{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto;
+}
+
+.DashboardIcon{
+    width: 1.4vw;
+    height: 2.2vmin;
+}
+
+.MintIcon{
+    width: 1.3vw;
+    height: 2.3vmin;
+}
+
+.WDubIcon{
+    width: 1.3vw;
+    height: 2vmin;
+}
+
+.FarmIcon{
+    width: 1.3vw;
+    height: 2vmin;
+}
+.BalanceWrapper{
+    width: 26vw;
+    display: grid;
+    justify-items: end;
+}
+.BalanceContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 2.1vmin;
+    width: fit-content;
+    border: black solid 0.17vw;
+    align-items: center;
+    justify-content: start;
+    margin-top: -0.56vmin;
+    border-radius: 2.3vmin;
+    border-bottom: black solid 0.27vw;
+    justify-items: center;
+    user-select: none;
+    
+}
+
+.BalanceText{
+    color: #000;
+    padding-left: 0.6vw;
+    padding-right: 0.6vw;
+    font-size: 0.79vw;
+    border-right: black solid 0.15vw;
+    height: 2.36vmin;
+    display: grid;
+    align-items: center;
+    align-content: center;
+}
+
+.BalanceText button{
+    background: none;
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: 0.79vw;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    line-height: 2.36vmin;
+    font-family: 'Prompt', sans-serif;
+    display: grid;
+    align-items: center;
+    align-content: center;
+}
+
+.BalanceText:last-child{
+    border-right: none;
+}
