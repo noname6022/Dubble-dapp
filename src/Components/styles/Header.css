@@ -17,7 +17,7 @@
 
 .HeaderLinks{
     display: grid;
-    grid-template-columns: 13vw 5.5vw 9.5vw 4vw;
+    grid-template-columns: 13.8vw 3.8vw 10.3vw 5vw;
     height: 5.1vmin;
     width: 36vw;
     border: black solid 0.17vw;
@@ -49,11 +49,11 @@
 }
 
 .HeaderLinks a:nth-child(3) {
-    column-gap: 0.78vw;
+    column-gap: 0.43vw;
 }
 
 .HeaderLinks a:nth-child(4) {
-    column-gap: 0.46vw;
+    column-gap: 0.43vw;
 }
 
 .LinkContainer{
@@ -75,12 +75,12 @@
 }
 
 .WDubIcon{
-    width: 1.3vw;
+    width: 1.4vw;
     height: 2vmin;
 }
 
 .FarmIcon{
-    width: 1.3vw;
+    width: 1.4vw;
     height: 2vmin;
 }
 .BalanceWrapper{
