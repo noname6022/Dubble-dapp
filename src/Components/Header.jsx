@@ -23,7 +23,7 @@ export const Header = () => {
       <div className='BalanceContainer'>
         <span className='BalanceText'>256 Dub</span>
         <span className='BalanceText'>258 wDub</span>
-        <span className='BalanceText'><button>0x52a...AC</button></span>
+        <span className='BalanceText'><button>Connect Wallet</button></span>
       </div>
       </div>
     </div>

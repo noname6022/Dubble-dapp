@@ -1,0 +1,36 @@
+.DashboardWrapper{
+    display: grid;
+    grid-template-rows: 11vmin 63vmin 9vmin;
+}
+
+.DashboardHeaderContainer{
+    background-color: #865BE3;
+    width: 100vw;
+    display: grid;
+    border-bottom-left-radius: 3vmin;
+    border-bottom-right-radius: 3vmin;
+    color: #000;
+    grid-template-columns: 18vw 82vw;
+    align-items: center;
+    user-select: none;
+}
+
+.DashboardHeaderContainerText{
+    font-family: 'Public Pixel', sans-serif;
+    display: grid;
+    align-items: center;
+}
+
+.DashboardHeaderContainerText h1{
+    font-family: 'Public Pixel', sans-serif;
+    font-size: 3.2vw;
+    letter-spacing: 0.48vw;
+    margin-left: 2.2vw;
+}
+
+.DashboardHeaderContainerAnimation{
+    display: grid;
+    justify-content: end;
+    padding-right: 2.2vw;
+    margin-top: -6vmin;
+}

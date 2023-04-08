@@ -1,0 +1,36 @@
+.FarmWrapper{
+    display: grid;
+    grid-template-rows: 11vmin 63vmin 9vmin;
+}
+
+.FarmHeaderContainer{
+    background-color: #865BE3;
+    width: 100vw;
+    display: grid;
+    border-bottom-left-radius: 3vmin;
+    border-bottom-right-radius: 3vmin;
+    color: #000;
+    grid-template-columns: 18vw 82vw;
+    align-items: center;
+    user-select: none;
+}
+
+.FarmHeaderContainerText{
+    font-family: 'Public Pixel', sans-serif;
+    display: grid;
+    align-items: center;
+}
+
+.FarmHeaderContainerText h1{
+    font-family: 'Public Pixel', sans-serif;
+    font-size: 3.2vw;
+    letter-spacing: 0.48vw;
+    margin-left: 2.2vw;
+}
+
+.FarmHeaderContainerAnimation{
+    display: grid;
+    justify-content: end;
+    padding-right: 1.2vw;
+    margin-top: -3vmin;
+}
