@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles/DashboardStyles.css'
 import DashboardChartIcon from '../assets/DashboardChart'
+import Footer from './Footer'
 
 export const Dashboard = () => {
   return (
@@ -10,6 +11,7 @@ export const Dashboard = () => {
         <div className='DashboardHeaderContainerAnimation'><DashboardChartIcon/></div>
       </div>
       <div className='DashboardSvgs'>Hi</div>
+      <Footer/>
     </div>
   )
 }

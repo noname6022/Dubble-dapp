@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles/MintStyles.css'
-import DashboardChartIcon from '../assets/DashboardChart'
+import Footer from './Footer'
+
 
 export const Mint = () => {
   return (
@@ -9,7 +10,9 @@ export const Mint = () => {
         <div className='MintHeaderContainerText'><h1>Mint</h1></div>
         <div className='MintHeaderContainerAnimation'></div>
       </div>
-      <div className='MintSvgs'>Hi</div>
+      <div className='MintSvgs'>Hdfgi</div>
+        <Footer/>
+
     </div>
   )
 }

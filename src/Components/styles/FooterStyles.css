@@ -1,0 +1,38 @@
+.FooterContainer{
+    display: grid;
+    grid-template-columns: 21vw 58vw;
+    justify-items: center;
+    align-items: center;
+}
+
+.SocialContainer{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 4.3vw 4vw 4vw;
+    align-items: center;
+    transition: all .3s;
+    user-select: none;
+    z-index: 1;
+    filter: drop-shadow(0vw 0vw 2.56vw black);
+}
+
+.SocialContainer a svg :hover{
+    filter:  none;
+    fill: #ad9cf1;
+    transition: ease-in-out .2s;
+}
+
+.DisableSocialIcon img:hover{
+    filter: none;
+}
+
+.CopyrightContainer{
+    display: grid;
+}
+
+.CopyrightContainer h3{
+    font-family: 'Oxanium', sans-serif;
+    font-weight: 400;
+    color: #565454;
+    font-size: 0.85vw;
+}

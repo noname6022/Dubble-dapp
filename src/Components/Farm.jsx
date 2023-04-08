@@ -1,5 +1,6 @@
 import React from 'react'
 import './styles/FarmStyles.css'
+import Footer from './Footer'
 
 export const Farm = () => {
   return (
@@ -9,6 +10,7 @@ export const Farm = () => {
         <div className='FarmHeaderContainerAnimation'></div>
       </div>
       <div className='FarmSvgs'>Hi</div>
+      <Footer/>
     </div>
   )
 }

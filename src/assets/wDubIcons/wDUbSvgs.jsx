@@ -6,7 +6,7 @@ const Svg = styled.svg`
     height: 10vmin;
   path {
     opacity: 0;
-    animation: wDubAnimation 11s infinite;
+    animation: wDubAnimation 8s infinite;
   }
 
   @keyframes wDubAnimation {
@@ -22,23 +22,23 @@ const Svg = styled.svg`
   }
 
   path:nth-child(2) {
-    animation-delay: 2s;
+    animation-delay: 1s;
   }
 
   path:nth-child(3) {
-    animation-delay: 4s;
+    animation-delay: 3s;
   }
 
   path:nth-child(4) {
-    animation-delay: 6s;
+    animation-delay: 5s;
   }
 
   path:nth-child(5) {
-    animation-delay: 8s;
+    animation-delay: 6s;
   }
 
   path:nth-child(6) {
-    animation-delay: 10s;
+    animation-delay: 8s;
   }
 `;
 
