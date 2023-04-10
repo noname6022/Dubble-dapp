@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles/dubbleDubStyles.css'
 import WDUbSvgs from '../assets/wDubIcons/wDUbSvgs'
+import ArrowDown from '../assets/ArrowDown.svg'
 import Footer from './Footer'
 
 export const DuubleDub = () => {
@@ -18,6 +19,32 @@ export const DuubleDub = () => {
           when rebasing occurs daily. When wDUB is unwrapped, you receive equal wDUB:DUB<br/>
           value in return, so the total yield earned is the same.</p>
         </div>
+
+        <div className='wDubInputFirstWrapper'>
+          <span>From</span>
+          <div className='wDubInputFirstContainer'>
+            <input/>
+          </div>
+          
+        </div>
+
+        <div>
+        <img src={ArrowDown}/>
+        </div>
+
+        <div>
+          <span>to</span>
+          <input/>
+        </div>
+
+        <div>
+        <span>Current Index</span>
+        </div>
+
+        <div>
+          <button>Wrap</button>
+        </div>
+
         </div>
       </div>
       <Footer/>

@@ -1,6 +1,6 @@
 .wDubWrapper{
     display: grid;
-    grid-template-rows: 11vmin 63vmin 9vmin;
+grid-template-rows: 12vmin 63vmin 9vmin;
 }
 
 .wDubHeaderContainer{
@@ -49,7 +49,7 @@
     width: 44vw;
     border-radius: 2vmin;
     height: 51vmin;
-    grid-template-rows: 14vmin 6vmin 7vmin 7vmin 7.88vmin 4vmin;
+    grid-template-rows: 14vmin 8vmin 7vmin 7vmin 7.88vmin 4vmin;
     align-items: center;
 }
 
@@ -62,4 +62,36 @@
     margin-left: 0.6vw;
     text-align: left;
     display: grid;
+}
+
+.wDubInputFirstWrapper{
+    display: grid;
+    justify-items: start;
+    color: black;
+}
+
+
+
+.wDubInputFirstContainer{
+    width: 40.3vw;
+    border-radius: 1.9vmin;
+    height: 6vmin;
+    padding: 0;
+    margin: 0;
+    border: 0.12vw solid black;
+    border-bottom: black solid 0.27vw;
+    outline: 0;  
+    background-color: #fff;
+}
+
+.wDubInputFirstContainer input {
+    width: 20vw;
+    height: 5.9vmin;
+    padding: 0;
+    margin: 0;
+    margin-left: -5vw;
+    background-color: #fff;
+    margin-top: 0.1vmin;
+    border: 0;
+    outline: 0;
 }
