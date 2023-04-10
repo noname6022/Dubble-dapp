@@ -1,6 +1,6 @@
 .DashboardWrapper{
     display: grid;
-    grid-template-rows: 11vmin 63vmin 9vmin;
+grid-template-rows: 12vmin 63vmin 9vmin;
 }
 
 .DashboardHeaderContainer{

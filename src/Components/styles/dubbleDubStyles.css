@@ -49,7 +49,7 @@ grid-template-rows: 12vmin 63vmin 9vmin;
     width: 44vw;
     border-radius: 2vmin;
     height: 51vmin;
-    grid-template-rows: 14vmin 8vmin 7vmin 7vmin 7.88vmin 4vmin;
+    grid-template-rows: 14vmin 8vmin 7vmin 5vmin 9.88vmin 4vmin;
     align-items: center;
 }
 
@@ -64,15 +64,24 @@ grid-template-rows: 12vmin 63vmin 9vmin;
     display: grid;
 }
 
-.wDubInputFirstWrapper{
+.wDubInputWrapper{
     display: grid;
     justify-items: start;
     color: black;
+    margin-top: -1.3vmin;
+}
+
+.wDubInputWrapperText{
+    color: black;
+    margin-left: 2.5vw;
+    margin-bottom: 0.7vmin;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 700;
+    font-size: 1.047vw
 }
 
 
-
-.wDubInputFirstContainer{
+.wDubInputContainer{
     width: 40.3vw;
     border-radius: 1.9vmin;
     height: 6vmin;
@@ -80,18 +89,220 @@ grid-template-rows: 12vmin 63vmin 9vmin;
     margin: 0;
     border: 0.12vw solid black;
     border-bottom: black solid 0.27vw;
-    outline: 0;  
-    background-color: #fff;
+    outline: 0;
+    background-color: #D9D9D9;
+    display: grid;
+    grid-template-columns: 9.5vw 19vw 10.7vw;
+    justify-items: end;
 }
 
-.wDubInputFirstContainer input {
-    width: 20vw;
-    height: 5.9vmin;
+.wDubInputContainer input {
+    height: 5.8vmin;
     padding: 0;
     margin: 0;
-    margin-left: -5vw;
-    background-color: #fff;
+    background-color: #D9D9D9;
     margin-top: 0.1vmin;
     border: 0;
     outline: 0;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 700;
+    font-size: 1.047vw;
+    padding-right: 4vw;
+}
+
+.wDubArrowContainer {
+    display: grid;
+    width: 43vw;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.wDubArrowContainer img{
+    width: 3vw;
+    height: 3.3vmin;
+    margin-left: 0.5vw;
+
+}
+
+.wDubIconConatiner{
+    width: 7vw;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    grid-template-columns: 2.6vw 3vw;
+    margin-left: 4vw;
+    justify-items: start;
+}
+
+.wDubIconConatiner span{
+    font-size: 1vw;
+    font-weight: 700;
+    width: 2.2vw;
+    height: 2.7vmin;
+    display: grid;
+    align-content: center;
+    align-items: center;
+    padding-top: 0.1vmin;
+}
+
+.InputBalanceContainer{
+    display: grid;
+    justify-items: end;
+    align-items: center;
+
+    margin-right: 1vw;
+    grid-template-rows: 3.3vmin 2vmin;
+}
+
+.InputBalanceContainer span{
+ font-size: 1.1vw;
+    font-weight: 700;
+    margin-top: 0.57vmin;
+
+}
+
+.InputBalanceContainerAdditionalInfo{
+    display: grid;
+    grid-template-columns: 3.4vw max-content;
+    justify-items: start;
+    align-items: center;
+}
+
+.InputBalanceContainerAdditionalInfo span{
+    font-size: 0.7vw;
+    font-weight: 400;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.wDubMaxBtn{
+    background-color: #D9D9D9;
+    outline: none;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 700;
+    font-size: 0.75vw;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 0.1vmin 0.5vw;
+    margin-left: -0.1vw;
+    margin-top: -0.3vmin;
+    border: 0.1vw solid black;
+    border-radius: 0.7vmin;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.wDubMaxBtn:hover{
+    background-color: #8E68E6;
+}
+
+.SecondWDubIconConatinerText{
+    color: #3A86D8;
+    font-size: 1vw;
+    font-weight: 700;
+    width: 2.2vw;
+    height: 2.7vmin;
+    display: grid;
+    align-content: center;
+    align-items: center;
+    padding-top: 0.1vmin;
+}
+
+.SecondInputBalanceContainer{
+    margin-top: 0.3vmin;
+}
+
+.SecondInputBalanceContainerAdditionalInfo{
+    font-size: 0.7vw !important;
+    font-weight: 400 !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
+}
+
+.wDubBtn{
+    background-color: #8E68E6;
+    outline: none;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 500;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    width: 40.5vw;
+    margin-left: 0.45vw;
+    margin-top: -0.6vmin;
+    height: 4.1vmin;
+    border: 0.12vw solid black;
+    border-bottom: black solid 0.27vw;
+    border-radius: 2.7vmin;
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    transition: all .2s;
+}
+
+.wDubBtn:hover{
+    background-color: #D9D9D9;
+}
+
+.wDubMetamaskWrapper{
+    width: 33.3vw;
+    height: 3vmin;
+    margin-top: 1.7vmin;
+}
+
+
+.wDubMetamaskContainer{
+    width: 9.8vw;
+    height: 2.7vmin;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding-top: 0.1vmin;
+    justify-items: end;
+    column-gap: 0.18vw;
+    flex-wrap: nowrap;
+    margin-left: -1vw;
+}
+
+.wDubMetamaskContainer span{
+    color: #3A86D8;
+    font-size: 1vw;
+    font-weight: 700;
+    align-items: center;
+    display: grid;
+    height: 2.7vmin;
+}
+
+.wDubMetamaskBtn{
+    background-color: #D9D9D9;
+    outline: none;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 700;
+    font-size: 0.75vw;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    margin-left: 0.1vw;
+    margin-top: -0.1vmin;
+
+    padding: 0.2vmin 0.5vw;
+    border: 0.1vw solid black;
+    border-radius: 1vmin;
+    cursor: pointer;
+    display: flex;
+    transition: all .2s;
+    align-items: center;
+    justify-content: center;
+}
+
+.wDubMetamaskBtn:hover{
+    background-color: #8E68E6;
+}
+
+.wDubMetamaskBtn img{
+    width: 1vw;
 }

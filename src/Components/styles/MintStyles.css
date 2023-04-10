@@ -1,6 +1,6 @@
 .MintWrapper{
     display: grid;
-    grid-template-rows: 11vmin 63vmin 9vmin;
+grid-template-rows: 12vmin 63vmin 9vmin;
 }
 
 .MintHeaderContainer{
@@ -33,4 +33,67 @@
     justify-content: end;
     padding-right: 1.2vw;
     margin-top: -3vmin;
+}
+
+.MintBlocks{
+    display: grid;
+    grid-template-columns: 26vw 27vw 45vw;
+    margin: 9.5vmin 1vw 0 1vw;
+}
+.MintFirstBlocks{
+    display: grid;
+    grid-template-rows: 16vmin 19vmin 19vmin;
+}
+
+
+
+.TotalValueBlock{
+    background-color: #E27759;
+    border-radius: 1.7vmin;
+    color: #000;
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    justify-content: start;
+    grid-template-rows: 9vmin 4vmin;
+}
+
+.TotalValueBlock h3{
+    font-weight: 500;
+    font-size: 1.1vw;
+    margin-left: 1.3vw;
+}
+
+.TotalValueBlock h2{
+     font-weight: 400;
+    font-size: 3.4vw;
+    margin-left: 1.5vw;
+
+}
+
+.ActiveStrategyBlock{
+    background: url(../../assets/ActiveStategyBG.png);
+    margin-top: 0.11vmin;
+    display: grid;
+    background-size: 100.15% 107%;
+    border-radius: 1.7vmin;
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    justify-content: start;
+    grid-template-rows: 12vmin 1vmin;
+}
+
+.ActiveStrategyBlock h3{
+    font-weight: 500;
+    font-size: 1.1vw;
+    margin-left: 1.3vw;
+}
+
+.ActiveStrategyBlock h2{
+     font-weight: 400;
+    font-size: 3.4vw;
+    margin-left: 1.4vw;
+    margin-top: -1vmin;
+
 }

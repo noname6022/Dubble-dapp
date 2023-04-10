@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Svg = styled.svg`
     width: 30vw;
-    height: 10vmin;
+    height: 8vmin;
   path {
     opacity: 0;
     animation: wDubAnimation 8s infinite;

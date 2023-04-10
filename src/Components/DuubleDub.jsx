@@ -3,6 +3,10 @@ import './styles/dubbleDubStyles.css'
 import WDUbSvgs from '../assets/wDubIcons/wDUbSvgs'
 import ArrowDown from '../assets/ArrowDown.svg'
 import Footer from './Footer'
+import DubInput from '../assets/InputIcons/DubInput'
+import WDubIcon from '../assets/InputIcons/WDubIcon'
+import WMetamaskIcon from '../assets/wDubIcons/MetamaskIcon.webp'
+import PlusIcon from '../assets/wDubIcons/PlusIcon'
 
 export const DuubleDub = () => {
   return (
@@ -20,29 +24,61 @@ export const DuubleDub = () => {
           value in return, so the total yield earned is the same.</p>
         </div>
 
-        <div className='wDubInputFirstWrapper'>
-          <span>From</span>
-          <div className='wDubInputFirstContainer'>
-            <input/>
+        <div className='wDubInputWrapper'>
+          <span className='wDubInputWrapperText'>From</span>
+          <div className='wDubInputContainer'>
+            <div className='wDubIconConatiner'>
+              <DubInput/>
+              <span>DUB</span>
+            </div>
+            <input type='text'/>
+            <div className='InputBalanceContainer'>
+              <span>
+                0.00
+              </span>
+              <div className='InputBalanceContainerAdditionalInfo'>
+              
+              <button className='wDubMaxBtn'>Max</button>
+              <span>Balance: 0.00 DUB</span>
+              </div>
+            </div>
           </div>
           
         </div>
 
-        <div>
+        <div className='wDubArrowContainer'>
         <img src={ArrowDown}/>
         </div>
 
-        <div>
-          <span>to</span>
-          <input/>
+        <div className='wDubInputWrapper'>
+          <span className='wDubInputWrapperText'>To</span>
+          <div className='wDubInputContainer'>
+            <div className='wDubIconConatiner'>
+              <WDubIcon/>
+              <span className='SecondWDubIconConatinerText'>wDUB</span>
+            </div>
+            <input type='text'/>
+            <div className='InputBalanceContainer SecondInputBalanceContainer'>
+              <span>
+                0.00
+              </span>
+              <span className='SecondInputBalanceContainerAdditionalInfo'>Balance: 0.00 wDUB</span>
+
+            </div>
+          </div>
+          
         </div>
 
-        <div>
-        <span>Current Index</span>
+        <div className='wDubMetamaskWrapper'>
+        <div className='wDubMetamaskContainer'>
+        <WDubIcon/>
+              <span>$wDUB</span>
+              <button className='wDubMetamaskBtn'><img src={WMetamaskIcon}/><PlusIcon/></button>
+        </div>
         </div>
 
-        <div>
-          <button>Wrap</button>
+        <div className='wDubBtnWrapper'>
+          <button className='wDubBtn'>Wrap</button>
         </div>
 
         </div>
