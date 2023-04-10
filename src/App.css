@@ -5,3 +5,8 @@
   text-align: center;
 }
 
+.App{
+  display: grid;
+  grid-template-rows: 16vmin;
+}
+

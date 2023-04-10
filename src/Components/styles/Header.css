@@ -17,7 +17,8 @@
 
 .HeaderLinks{
     display: grid;
-    grid-template-columns: 13.8vw 3.8vw 10.3vw 5vw;
+    /*grid-template-columns: 13.8vw 3.8vw 10.3vw 5vw;*/
+    grid-template-columns: 15.8vw 6.8vw 12.3vw;
     height: 5.1vmin;
     width: 36vw;
     border: black solid 0.17vw;

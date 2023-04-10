@@ -17,7 +17,7 @@ export const Header = () => {
       <Link to="/" className='LinkContainer'><img src={DashboardIcon} className='DashboardIcon'/> Dashboard</Link>
       <Link to="/Mint" className='LinkContainer'><img src={MintIcon} className='MintIcon'/>Mint</Link>
       <Link to="/wDub" className='LinkContainer'><img src={WDubIcon} className='WDubIcon'/>wDUB</Link>
-      <Link to="/Farm" className='LinkContainer'><img src={FarmIcon} className='FarmIcon'/>Farm</Link>
+     {/*  <Link to="/Farm" className='LinkContainer'><img src={FarmIcon} className='FarmIcon'/>Farm</Link>*/}
       </div>
       <div className='BalanceWrapper'>
       <div className='BalanceContainer'>
