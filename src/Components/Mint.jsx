@@ -44,11 +44,11 @@ export const Mint = () => {
       </div>
       <div className='ActiveStrategyBlock'>
         <h3>Active strategies</h3>
-        <h2>$10.0 M</h2>
+        <h2>3</h2>
       </div>
       
-      <div className="container">
-      <div className={`block ${active ? "active" : ""}`}>
+      <div className="APYBlock">
+      <div className={`APYBlockBG ${active ? "active" : ""}`}>
         <h3>APY</h3>
         <h2>{active ? '14990.71%' /* 30 days*/ : '149.71%' /* 7 days */ }</h2>
       </div>

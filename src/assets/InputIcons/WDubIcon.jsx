@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Svg = styled.svg`
     width: 2.5vw;
-    height: 2.7vmin;
+    height: 3.5vmin;
 `;
 
 export const WDubIcon = () => {

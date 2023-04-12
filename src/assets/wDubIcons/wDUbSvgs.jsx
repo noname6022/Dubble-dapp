@@ -2,8 +2,9 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Svg = styled.svg`
-    width: 30vw;
-    height: 8vmin;
+    width: 30.6vw;
+    margin-top: 3vmin;
+    height: 13.6vmin;
   path {
     opacity: 0;
     animation: wDubAnimation 8s infinite;

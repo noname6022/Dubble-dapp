@@ -1,6 +1,6 @@
 .wDubWrapper{
     display: grid;
-grid-template-rows: 12vmin 63vmin 9vmin;
+    grid-template-rows: 19vmin 89vmin 11vmin;
 }
 
 .wDubHeaderContainer{
@@ -19,6 +19,7 @@ grid-template-rows: 12vmin 63vmin 9vmin;
     font-family: 'Public Pixel', sans-serif;
     display: grid;
     align-items: center;
+    margin-top: 6vmin;
 }
 
 .wDubHeaderContainerText h1{
@@ -37,7 +38,7 @@ grid-template-rows: 12vmin 63vmin 9vmin;
 
 .wDubBlockWrapper{
     display: grid;
-    margin-top: 10.4vmin;
+    margin-top: 14.6vmin;
     justify-items: center;
     justify-content: center;
 }
@@ -48,8 +49,8 @@ grid-template-rows: 12vmin 63vmin 9vmin;
     justify-content: center;
     width: 44vw;
     border-radius: 2vmin;
-    height: 51vmin;
-    grid-template-rows: 14vmin 8vmin 7vmin 5vmin 9.88vmin 4vmin;
+    height: 71vmin;
+    grid-template-rows: 18vmin 14vmin 8vmin 8vmin 13vmin 8vmin;
     align-items: center;
 }
 
@@ -57,8 +58,8 @@ grid-template-rows: 12vmin 63vmin 9vmin;
     color: rgba(0, 0, 0, 0.6);
     font-size: 0.83vw;
     font-weight: 500;
-    line-height: 2.1vmin;
-    margin-top: 1vmin;
+    line-height: 2.8vmin;
+    margin-top: 3vmin;
     margin-left: 0.6vw;
     text-align: left;
     display: grid;
@@ -83,8 +84,8 @@ grid-template-rows: 12vmin 63vmin 9vmin;
 
 .wDubInputContainer{
     width: 40.3vw;
-    border-radius: 1.9vmin;
-    height: 6vmin;
+    border-radius: 2.6vmin;
+    height: 8.7vmin;
     padding: 0;
     margin: 0;
     border: 0.12vw solid black;
@@ -97,11 +98,11 @@ grid-template-rows: 12vmin 63vmin 9vmin;
 }
 
 .wDubInputContainer input {
-    height: 5.8vmin;
+    height: 7.8vmin;
     padding: 0;
     margin: 0;
     background-color: #D9D9D9;
-    margin-top: 0.1vmin;
+    margin-top: 0.5vmin;
     border: 0;
     outline: 0;
     font-family: 'Prompt', sans-serif;
@@ -121,7 +122,7 @@ grid-template-rows: 12vmin 63vmin 9vmin;
 
 .wDubArrowContainer img{
     width: 3vw;
-    height: 3.3vmin;
+    height: 4.3vmin;
     margin-left: 0.5vw;
 
 }
@@ -151,9 +152,8 @@ grid-template-rows: 12vmin 63vmin 9vmin;
     display: grid;
     justify-items: end;
     align-items: center;
-
     margin-right: 1vw;
-    grid-template-rows: 3.3vmin 2vmin;
+    grid-template-rows: 5vmin 2vmin;
 }
 
 .InputBalanceContainer span{
@@ -213,7 +213,7 @@ grid-template-rows: 12vmin 63vmin 9vmin;
 }
 
 .SecondInputBalanceContainer{
-    margin-top: 0.3vmin;
+    margin-top: 0.8vmin;
 }
 
 .SecondInputBalanceContainerAdditionalInfo{
@@ -295,8 +295,8 @@ grid-template-rows: 12vmin 63vmin 9vmin;
     margin: 0;
     width: 40.5vw;
     margin-left: 0.45vw;
-    margin-top: -0.6vmin;
-    height: 4.1vmin;
+    margin-top: -2.6vmin;
+    height: 6.1vmin;
     border: 0.12vw solid black;
     border-bottom: black solid 0.27vw;
     border-radius: 2.7vmin;

@@ -7,6 +7,5 @@
 
 .App{
   display: grid;
-  grid-template-rows: 16vmin;
+  grid-template-rows: 20vmin;
 }
-

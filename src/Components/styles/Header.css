@@ -3,7 +3,7 @@
     width: 100vw;
     height: 14vmin;
     display: grid;
-    padding-top: 3vmin;
+    padding-top: 6.5vmin;
     grid-template-columns: 17vw 54vw 27vw;
     justify-items: center;
     align-items: center;
@@ -12,21 +12,21 @@
 
 .HeaderLogoStyle{
     width: 12.7vw;
-    height: 4vmin;
+    height: 5vmin;
 }
 
 .HeaderLinks{
     display: grid;
     /*grid-template-columns: 13.8vw 3.8vw 10.3vw 5vw;*/
     grid-template-columns: 15.8vw 6.8vw 12.3vw;
-    height: 5.1vmin;
+    height: 7.1vmin;
     width: 36vw;
     border: black solid 0.17vw;
     align-items: center;
     justify-content: start;
     margin-left: 10vw;
-    margin-top: -0.45vmin;
-    border-radius: 2.3vmin;
+    margin-top: 0.25vmin;
+    border-radius: 2.8vmin;
     border-bottom: black solid 0.27vw;
     justify-items: center;
 }
@@ -92,7 +92,7 @@
 .BalanceContainer{
     display: grid;
     grid-template-columns: auto auto auto;
-    height: 2.1vmin;
+    height: 3.1vmin;
     width: fit-content;
     border: black solid 0.17vw;
     align-items: center;
@@ -102,7 +102,6 @@
     border-bottom: black solid 0.27vw;
     justify-items: center;
     user-select: none;
-    
 }
 
 .BalanceText{

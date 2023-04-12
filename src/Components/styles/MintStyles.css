@@ -1,7 +1,9 @@
 .MintWrapper{
-    display: grid;
-grid-template-rows: 12vmin 63vmin 9vmin;
+  display: grid;
+  grid-template-rows: 19vmin 89vmin 11vmin;
 }
+
+
 
 .MintHeaderContainer{
     background-color: #865BE3;
@@ -16,9 +18,10 @@ grid-template-rows: 12vmin 63vmin 9vmin;
 }
 
 .MintHeaderContainerText{
-    font-family: 'Public Pixel', sans-serif;
-    display: grid;
-    align-items: center;
+  font-family: 'Public Pixel', sans-serif;
+  display: grid;
+  align-items: center;
+  margin-top: 6vmin;
 }
 
 .MintHeaderContainerText h1{
@@ -36,26 +39,28 @@ grid-template-rows: 12vmin 63vmin 9vmin;
 }
 
 .MintBlocks{
-    display: grid;
-    grid-template-columns: 26vw 27vw 45vw;
-    margin: 9.5vmin 1vw 0 1vw;
+  display: grid;
+  grid-template-columns: 25.5vw 27.1vw 45vw;
+  margin: 14.8vmin 1vw 0 1.2vw;
 }
+
 .MintFirstBlocks{
-    display: grid;
-    grid-template-rows: 16vmin 19vmin 19vmin;
+  display: grid;
+  grid-template-rows: 22vmin 24.7vmin 22vmin;
+
 }
 
 
 
 .TotalValueBlock{
-    background-color: #E27759;
-    border-radius: 1.7vmin;
-    color: #000;
-    display: grid;
-    justify-items: start;
-    align-items: center;
-    justify-content: start;
-    grid-template-rows: 9vmin 4vmin;
+  background-color: #E27759;
+  border-radius: 1.7vmin;
+  color: #000;
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  justify-content: start;
+  grid-template-rows: 12vmin 5vmin;
 }
 
 .TotalValueBlock h3{
@@ -65,9 +70,9 @@ grid-template-rows: 12vmin 63vmin 9vmin;
 }
 
 .TotalValueBlock h2{
-     font-weight: 400;
-    font-size: 3.4vw;
-    margin-left: 1.5vw;
+  font-weight: 400;
+  font-size: 4vw;
+  margin-left: 1.1vw;
 
 }
 
@@ -81,32 +86,33 @@ grid-template-rows: 12vmin 63vmin 9vmin;
     justify-items: start;
     align-items: center;
     justify-content: start;
-    grid-template-rows: 12vmin 1vmin;
+    grid-template-rows: 16vmin 1vmin;
 }
 
 .ActiveStrategyBlock h3{
-    font-weight: 500;
-    font-size: 1.1vw;
-    margin-left: 1.3vw;
+  font-weight: 500;
+  font-size: 1.02vw;
+  margin-left: 1.3vw;
 }
 
 .ActiveStrategyBlock h2{
-     font-weight: 400;
-    font-size: 3.4vw;
-    margin-left: 1.4vw;
-    margin-top: -1vmin;
-
+  font-weight: 400;
+  font-size: 3.5vw;
+  margin-left: 1.4vw;
+  margin-top: -1vmin;
 }
 
 
 
 
-.container {
+.APYBlock {
     display: grid;
     align-items: center;
+    height: fit-content;
+    margin-top: 1.5vmin;
   }
   
-  .block {
+  .APYBlockBG {
     background-color: #8E68E6;
     border-radius: 1.7vmin;
     color: #000;
@@ -114,12 +120,11 @@ grid-template-rows: 12vmin 63vmin 9vmin;
     justify-items: start;
     align-items: center;
     justify-content: start;
-    grid-template-rows: 7vmin 5vmin 2vmin;
+    grid-template-rows: 10vmin 6vmin 4vmin;
     padding: 1vmin;
-
   }
   
-  .block h2 {
+  .APYBlockBG h2 {
     left: 0.6vw;
     font-size: 4vw;
     margin: 0;
@@ -128,7 +133,7 @@ grid-template-rows: 12vmin 63vmin 9vmin;
     white-space: nowrap;
   }
   
-  .block h3 {
+  .APYBlockBG h3 {
     left: 0.7vw;
     font-size: 1vw;
     margin: 0;
@@ -137,17 +142,17 @@ grid-template-rows: 12vmin 63vmin 9vmin;
   }
   
   .toggle-container {
-
     position: absolute;
-    left: 19vw;
-    top: 77.12vmin;
+    left: 19.2vw;
+    top: 106.56vmin;
+    user-select: none;
   }
   
   .toggle {
     position: relative;
     display: flex;
-    width: 6.4vw;
-    height: 2.36vmin;
+    width: 6.2vw;
+    height: 2.86vmin;
     background-color: #000;
     border-radius: 2vmin;
     cursor: pointer;
@@ -156,9 +161,9 @@ grid-template-rows: 12vmin 63vmin 9vmin;
   }
   
   .knob {
-    margin-left: 0.14vw;
+    margin-left: 0.24vw;
     width: 2.8vw;
-    height: 1.9vmin;
+    height: 2.2vmin;
     border-radius: 2vmin;
     background-color: #8E68E6;
     display: grid;
@@ -170,7 +175,7 @@ grid-template-rows: 12vmin 63vmin 9vmin;
   
   .knob.active {
     
-    transform: translateX(3.35vw);
+    transform: translateX(3vw);
   }
 
   .label{
@@ -200,19 +205,19 @@ grid-template-rows: 12vmin 63vmin 9vmin;
     width: fit-content;
     font-size: 0.5vw;
     transition: all 0.25s ease-in-out;
-    transform: translateX(0.76vw);
+    transform: translateX(0.66vw);
   }
 
 .ExchangeBlock{
-    background-color: #E4D559;
-    margin-left: 1vw;
-    border-radius: 1.8vmin;
-    height: 33.5vmin;
-    color: #000;
-    display: grid;
-    align-items: end;
-    grid-template-rows: 8.8vmin 17vmin 3.5vmin;
-    justify-items: center;
+  background-color: #E4D559;
+  margin-left: 1.3vw;
+  border-radius: 1.8vmin;
+  height: 45.89vmin;
+  color: #000;
+  display: grid;
+  align-items: end;
+  grid-template-rows: 12.3vmin 23.3vmin 5vmin;
+  justify-items: center;
   }
   
 .ExchangeBlockText{
@@ -236,7 +241,7 @@ grid-template-rows: 12vmin 63vmin 9vmin;
   }
   .ExchangeBlockText hr{
     margin: 0;
-    margin-top: 1vmin;
+    margin-top: 1.43vmin;
     width: 20.5vw;
     text-align: center;
     border: 0;
@@ -245,22 +250,22 @@ grid-template-rows: 12vmin 63vmin 9vmin;
   }
 
 .CurrencyExchangeSection{
-    width: 21vw;
-    display: grid;
-    grid-template-rows: 4vmin 7.5vmin 2.5vmin;
-    justify-items: center;
-    align-items: center;
+  width: 21vw;
+  display: grid;
+  grid-template-rows: 5.3vmin 10vmin 3.8vmin;
+  justify-items: center;
+  align-items: center;
 }
 
 .CurrencyExchangeSectionBlock{
-    display: grid;
-    grid-template-columns: 2.8vw auto 8vw 0.3vw;
-    padding-left: 1vw;
-    padding-bottom: 1vmin;
-    align-items: center;
-    width: 19.7vw;
-    border-bottom: 0.2vmin solid black;
-    align-content: center;
+  display: grid;
+  grid-template-columns: 2.8vw auto 8.25vw 0.45vw;
+  padding-left: 1vw;
+  padding-bottom: 1vmin;
+  align-items: center;
+  width: 19.7vw;
+  border-bottom: 0.2vmin solid black;
+  align-content: center;
 }
 
 .CurrencyExchangeSectionBlock:nth-child(3){
@@ -271,10 +276,10 @@ grid-template-rows: 12vmin 63vmin 9vmin;
 }
 
 .CurrencyExchangeSectionBlock span{
-    font-size: 0.95vw;
-    font-weight: 400;
-    margin-top: 0.2vmin;
-    width: fit-content;
+  font-size: 1vw;
+  font-weight: 400;
+  margin-top: 0.2vmin;
+  width: fit-content;
 }
  .CurrencyExchangeSectionBlock span b{
     font-size: 0.97vw;
@@ -282,7 +287,7 @@ grid-template-rows: 12vmin 63vmin 9vmin;
  
 .CurrencyExchangeSectionBlock svg{
     width: 2.3vw;
-    height: 3vmin;
+    height: 4vmin;
 }
 
 
@@ -295,8 +300,8 @@ grid-template-rows: 12vmin 63vmin 9vmin;
 }
 
 .CurrencyInfoWithIconBLock img{
-    width: 2vw;
-    height: 3vmin;
+  width: 2.3vw;
+  height: 4vmin;
 }
 
 
@@ -307,8 +312,8 @@ grid-template-rows: 12vmin 63vmin 9vmin;
     width: fit-content;
     display: flex;
     align-items: center;
+    margin-left: -0.2vw;
     column-gap: 0.5vw;
-    margin-left: 0.1vw;
   }
 
 
@@ -321,39 +326,40 @@ grid-template-rows: 12vmin 63vmin 9vmin;
     display: grid;
     justify-items: center;
     justify-content: center;
-    width: 44vw;
+    width: 43.8vw;
     border-radius: 2vmin;
-    height: 51vmin;
-    grid-template-rows: 12vmin 8vmin ;
+    height: 71vmin;
+    grid-template-rows: 14vmin 12vmin;
     align-items: center;
-    margin-left: 1vw;
+    margin-left: 1.2vw;
 }
 
 .MintRedeemBlockButtonsContainer{
     display: grid;
-    grid-template-columns: 9.8vw 9.8vw;
-    column-gap: 2.3vw;
+    grid-template-columns: 10vw 10vw;
+    column-gap: 2.6vw;
 }
 
 .MintRedeemBlockButtonsContainer button {
-    color: #000;
-    outline: none;
-    font-family: 'Prompt', sans-serif;
-    font-weight: 500;
-    font-size: 1.5vw;
-    padding: 0;
-    margin: 0;
-    margin-left: 0.45vw;
-    margin-top: -2.6vmin;
-    height: 5.1vmin;
-    border: 0.12vw solid black;
-    border-bottom: black solid 0.27vw;
-    border-radius: 2.7vmin;
-    cursor: pointer;
-    display: grid;
-    align-items: center;
-    align-content: center;
-    transition: all .2s;
+  color: #000;
+  outline: none;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 500;
+  font-size: 1.7vw;
+  padding: 0;
+  margin: 0;
+  margin-left: 0.45vw;
+  margin-top: -0.6vmin;
+  height: 7.1vmin;
+  border: 0.12vw solid black;
+  border-bottom: black solid 0.27vw;
+  border-radius: 2.7vmin;
+  cursor: pointer;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  transition: all .2s;
+  padding-left: 0.4vw;
   }
 
   .redeem-button.active {

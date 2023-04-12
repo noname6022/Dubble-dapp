@@ -3,15 +3,17 @@ import React from 'react'
 import styled from 'styled-components';
 import Mario from './mario.webp'
 const Svg = styled.svg`
-    width: 37.5vw;
-    height: 11vmin;
+    width: 29.5vw;
+    height: 18vmin;
+    margin-right: 5.35vw;
+    margin-top: -1vmin;
 `
 const MarioImg= styled.img`
-        top: 18.6vmin;
+top: 25vmin;
     position: absolute;
-    left: 81vw;
-    width: 6vmin;
-    height: 6vmin;
+    left: 79.4vw;
+    width: 8.45vmin;
+    height: 8.45vmin;
 `;
 
 export const MintSvg = () => {

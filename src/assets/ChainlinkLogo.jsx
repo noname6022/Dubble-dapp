@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Svg = styled.svg`
     width: 5.7vw;
-    height: 2.7vmin;
+    height: 4vmin;
 `;
 
 export const ChainlinkLogo = () => {
