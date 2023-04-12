@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './styles/MintStyles.css'
+import './styles/ColorfulBlocksStyles.css'
 import Footer from './Footer'
 import MintSvg from '../assets/MintSvg'
 import DubInput from "../assets/InputIcons/DubInput";
@@ -8,26 +9,11 @@ import usdcIcon from '../assets/CryptoCurrencies Icons/usdc.svg'
 import usdtIcon from '../assets/CryptoCurrencies Icons/usdt.svg'
 import algoIcon from '../assets/CryptoCurrencies Icons/algo.svg'
 import daiIcon from '../assets/CryptoCurrencies Icons/dai.svg'
+
+import { Hooks } from './Backend/Hooks'
+
 export const Mint = () => {
-
-  const [active, setActive] = useState(false);
-
-  const handleClick = () => {
-    setActive(!active);
-  };
-
-  const [isRedeemActive, setIsRedeemActive] = useState(false);
-  const [isMintActive, setIsMintActive] = useState(true);
-  
-  const handleRedeemClick = () => {
-    setIsRedeemActive(true);
-    setIsMintActive(false);
-  };
-
-  const handleMintClick = () => {
-    setIsMintActive(true);
-    setIsRedeemActive(false);
-  };
+  const {active, setActive, handleClick, isRedeemActive, setIsRedeemActive, isMintActive, setIsMintActive, handleRedeemClick, handleMintClick} = Hooks()
 
   return (
     <div  className='MintWrapper'>
@@ -48,12 +34,12 @@ export const Mint = () => {
       </div>
       
       <div className="APYBlock">
-      <div className={`APYBlockBG ${active ? "active" : ""}`}>
+        <div className={`APYBlockBG ${active ? "active" : ""}`}>
         <h3>APY</h3>
         <h2>{active ? '14990.71%' /* 30 days*/ : '149.71%' /* 7 days */ }</h2>
-      </div>
-      <div className="toggle-container">
-        <div className="toggle" onClick={handleClick}>
+        </div>
+        <div className="toggle-container">
+          <div className="toggle" onClick={handleClick}>
           <div className={`knob ${active ? "active" : ""}`}>
             <div className="label">
               <span>

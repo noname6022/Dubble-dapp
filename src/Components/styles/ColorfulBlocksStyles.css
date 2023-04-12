@@ -1,0 +1,251 @@
+.TotalValueBlock{
+    background-color: #E27759;
+    border-radius: 1.7vmin;
+    color: #000;
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    justify-content: start;
+    grid-template-rows: 11.5vmin 6vmin;
+  }
+  
+  .TotalValueBlock h3{
+      font-weight: 500;
+      font-size: 1.1vw;
+      margin-left: 1.3vw;
+  }
+  
+  .TotalValueBlock h2{
+    font-weight: 400;
+    font-size: 4vw;
+    margin-left: 1.1vw;
+  
+  }
+  
+  .ActiveStrategyBlock{
+      background: url(../../assets/ActiveStategyBG.png);
+      margin-top: 0.11vmin;
+      display: grid;
+      background-size: 100.15% 107%;
+      border-radius: 1.7vmin;
+      display: grid;
+      justify-items: start;
+      align-items: center;
+      justify-content: start;
+      grid-template-rows: 16vmin 1vmin;
+  }
+  
+  .ActiveStrategyBlock h3{
+    font-weight: 500;
+    font-size: 1.02vw;
+    margin-left: 1.3vw;
+  }
+  
+  .ActiveStrategyBlock h2{
+    font-weight: 400;
+    font-size: 3.5vw;
+    margin-left: 1.4vw;
+    margin-top: -1vmin;
+  }
+  
+  
+
+  
+  .APYBlock {
+      display: grid;
+      align-items: center;
+      height: fit-content;
+      margin-top: 1.5vmin;
+    }
+
+    .DashboardAPYBlock{
+        grid-area: 4;
+        margin-top: 2.5vmin;
+        
+  }  
+
+    .APYBlockBG {
+      background-color: #8E68E6;
+      border-radius: 1.7vmin;
+      color: #000;
+      display: grid;
+      justify-items: start;
+      align-items: center;
+      justify-content: start;
+      grid-template-rows: 10vmin 6vmin 4vmin;
+      padding: 1vmin;
+    }
+
+    .DashboardAPYBlockBG{
+        grid-template-rows: 10vmin 6vmin 4.36vmin;
+    }
+
+    .APYBlockBG h2 {
+      left: 0.6vw;
+      font-size: 4vw;
+      margin: 0;
+      font-weight: 400;
+      position: relative;
+      white-space: nowrap;
+    }
+    
+    .APYBlockBG h3 {
+      left: 0.7vw;
+      font-size: 1vw;
+      margin: 0;
+      position: relative;
+      white-space: nowrap;
+    }
+    
+    .toggle-container {
+      position: absolute;
+      left: 19.2vw;
+      top: 106.56vmin;
+      user-select: none;
+    }
+
+    .Dashboard-toggle-container{
+        top: 83vmin;
+}
+    
+    .toggle {
+      position: relative;
+      display: flex;
+      width: 6.2vw;
+      height: 2.86vmin;
+      background-color: #000;
+      border-radius: 2vmin;
+      cursor: pointer;
+      align-items: center;
+      align-content: center;
+    }
+    
+    .knob {
+      margin-left: 0.2vw;
+      width: 2.8vw;
+      height: 2.2vmin;
+      border-radius: 2vmin;
+      background-color: #8E68E6;
+      display: grid;
+      transition: all 0.25s ease-in-out;
+      align-items: center;
+      color: #fff;
+      z-index: 1;
+    }
+    
+    .knob.active {
+      
+      transform: translateX(3vw);
+    }
+  
+    .label{
+      display: grid;
+      align-items: center;
+      align-content: center;
+    }
+    
+    .label span {
+      font-weight: 500;
+      font-size: 0.5vw;
+      color: #fff;
+  
+    }
+    
+    .non-active-label{
+      width: fit-content;
+      transition: all 0.25s ease-in-out;
+      transform: translateX(-2.1vw);
+      font-weight: 500;
+      font-size: 0.5vw;
+      position: relative;
+      bottom: -0.01vmin;
+    }
+  
+    .non-active-label.active{
+      width: fit-content;
+      font-size: 0.5vw;
+      transition: all 0.25s ease-in-out;
+      transform: translateX(0.5vw);
+    }
+
+    .ProfitBlock{
+        background-color: #E6E9E8;
+        border-radius: 1.7vmin;
+        color: #000;
+        display: grid;
+        justify-items: start;
+        align-items: center;
+        justify-content: start;
+        grid-template-rows: 11.5vmin 6vmin;
+        grid-area: 3;
+        margin-left: 1.2vw;
+      }
+      
+      .ProfitBlock h3{
+          font-weight: 500;
+          font-size: 1.1vw;
+          margin-left: 1.3vw;
+      }
+      
+      .ProfitBlock h2{
+        font-weight: 400;
+        font-size: 4vw;
+        margin-left: 1.1vw;
+      
+      }
+
+
+      .BalanceBlock{
+        background-color: #5DBF75;
+        border-radius: 1.7vmin;
+        color: #000;
+        display: grid;
+        justify-items: start;
+        align-items: center;
+        justify-content: start;
+        grid-template-rows: 11.5vmin 6vmin;
+        grid-area: 4;
+        margin-left: 1.2vw;
+        margin-top: 2vmin;
+      }
+      
+      .BalanceBlock h3{
+          font-weight: 500;
+          font-size: 1.1vw;
+          margin-left: 1.3vw;
+      }
+      
+      .BalanceBlock h2{
+        font-weight: 400;
+        font-size: 4vw;
+        margin-left: 1.1vw;
+      
+      }
+
+      .LRPBlock{
+        background-color: #E4D559;
+        border-radius: 1.7vmin;
+        color: #000;
+        display: grid;
+        justify-items: start;
+        align-items: center;
+        justify-content: start;
+        grid-template-rows: 11.5vmin 6vmin;
+        height: 22.3vmin;
+        grid-area: 5;
+        margin-left: 1.2vw;
+        margin-top: 2vmin;
+      }
+            
+      .LRPBlock h3{
+        font-weight: 500;
+        font-size: 1.1vw;
+        margin-left: 1.3vw;
+    }
+    
+    .LRPBlock h2{
+      font-weight: 400;
+      font-size: 4vw;
+      margin-left: 1.1vw;
+    
+    }

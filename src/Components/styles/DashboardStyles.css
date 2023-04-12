@@ -38,14 +38,36 @@
 
 .DashboardBlocks{
     display: grid;
-    grid-template-columns: 54vw 45vw;
+    grid-template-columns: 55vw 44vw;
     justify-items: start;
 }
 
-.DashboardBlocks h2{
+.DataBlockText{
     color: rgba(255, 255, 255, 0.6);
     font-weight: 275;
     font-size: 2.75vw;
-    margin-left: 1.3vw;
+
     margin-top: 3.6vmin;
+    display: grid;
+    justify-content: start;
+}
+
+.DataBlockText:nth-child(2){
+margin-left: 1vw;
+}
+
+.ProtocolDataBlock{
+    width: 53vw;
+    display: grid;
+    grid-template-columns: 25.3vw 27vw;
+    grid-template-rows: 10vmin 5vmin 22vmin 25vmin 25vmin;
+    margin-left: 1.5vw;
+}
+
+.DashboardActiveStrategy{
+    grid-area: 5;
+}
+
+.DashboardTotalValueBlock{
+    grid-area: 3;
 }
