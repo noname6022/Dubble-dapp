@@ -10,7 +10,7 @@
     border-bottom-left-radius: 3vmin;
     border-bottom-right-radius: 3vmin;
     color: #000;
-    grid-template-columns: 18vw 82vw;
+    grid-template-columns: 36vw 63.9vw;
     align-items: center;
     user-select: none;
 }
@@ -19,6 +19,7 @@
     font-family: 'Public Pixel', sans-serif;
     display: grid;
     align-items: center;
+    margin-top: 6vmin;
 }
 
 .DashboardHeaderContainerText h1{
@@ -33,4 +34,18 @@
     justify-content: end;
     padding-right: 2.2vw;
     margin-top: -6vmin;
+}
+
+.DashboardBlocks{
+    display: grid;
+    grid-template-columns: 54vw 45vw;
+    justify-items: start;
+}
+
+.DashboardBlocks h2{
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 275;
+    font-size: 2.75vw;
+    margin-left: 1.3vw;
+    margin-top: 3.6vmin;
 }

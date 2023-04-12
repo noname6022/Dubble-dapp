@@ -10,7 +10,15 @@ export const Dashboard = () => {
         <div className='DashboardHeaderContainerText'><h1>Dashboard</h1></div>
         <div className='DashboardHeaderContainerAnimation'><DashboardChartIcon/></div>
       </div>
-      <div className='DashboardSvgs'>Hi</div>
+      <div className='DashboardBlocks'>
+        <div>
+          <h2>Protocol data</h2>
+        </div>
+
+        <div>
+          <h2>Collateral</h2>
+        </div>
+      </div>
       <Footer/>
     </div>
   )

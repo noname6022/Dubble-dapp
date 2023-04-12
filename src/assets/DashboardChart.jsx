@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Svg = styled.svg`
-width: 44.5vw;
-    height: 15vmin;
+    width: 43.5vw;
+    height: 19vmin;
 `;
 
 
