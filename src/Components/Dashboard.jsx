@@ -33,7 +33,7 @@ export const Dashboard = () => {
       
       <div className='ProfitBlock'>
         <h3>Profit</h3>
-        <h2>$10.0 M</h2>
+        <h2>$1,200</h2>
       </div>
 
       <div className="APYBlock DashboardAPYBlock">
@@ -61,8 +61,8 @@ export const Dashboard = () => {
       </div>
 
       <div className='LRPBlock'>
-        <h3>Balance $DUB</h3>
-        <h2>845</h2>
+        <h3>Last Rebase Payout</h3>
+        <h2>$1,200</h2>
       </div>
 
         </div>
