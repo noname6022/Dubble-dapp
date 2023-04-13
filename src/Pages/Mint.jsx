@@ -9,8 +9,8 @@ import usdcIcon from '../assets/CryptoCurrencies Icons/usdc.svg'
 import usdtIcon from '../assets/CryptoCurrencies Icons/usdt.svg'
 import algoIcon from '../assets/CryptoCurrencies Icons/algo.svg'
 import daiIcon from '../assets/CryptoCurrencies Icons/dai.svg'
-import RedeemBlock from "./COmponents/RedeemBlock";
-import MintBlock from "./COmponents/MintBlock";
+import RedeemBlock from "./BlockComponents/RedeemBlock";
+import MintBlock from "./BlockComponents/MintBlock";
 import { Hooks } from './Backend/Hooks'
 
 
