@@ -1,0 +1,116 @@
+.wDubWrapper{
+    display: grid;
+    grid-template-rows: 19vmin 89vmin 11vmin;
+}
+
+.wDubHeaderContainer{
+    background-color: #865BE3;
+    width: 100vw;
+    display: grid;
+    border-bottom-left-radius: 3vmin;
+    border-bottom-right-radius: 3vmin;
+    color: #000;
+    grid-template-columns: 18vw 82vw;
+    align-items: center;
+    user-select: none;
+}
+
+.wDubHeaderContainerText{
+    font-family: 'Public Pixel', sans-serif;
+    display: grid;
+    align-items: center;
+    margin-top: 6vmin;
+}
+
+.wDubHeaderContainerText h1{
+    font-family: 'Public Pixel', sans-serif;
+    font-size: 3.2vw;
+    letter-spacing: 0.48vw;
+    margin-left: 1.2vw;
+}
+
+.wDubHeaderContainerAnimation{
+    display: grid;
+    justify-content: end;
+    padding-right: 1.2vw;
+    margin-top: -3vmin;
+}
+
+.wDubBlockWrapper{
+    display: grid;
+    margin-top: 14.6vmin;
+    justify-items: center;
+    justify-content: center;
+}
+.wDubBlockContainer{
+    background-color: #D9D9D9;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    width: 44vw;
+    border-radius: 2vmin;
+    height: 71vmin;
+    grid-template-rows: 18vmin 14vmin 8vmin 8vmin 13vmin 8vmin;
+    align-items: center;
+}
+
+.wDubBlockContainer p{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.83vw;
+    font-weight: 500;
+    line-height: 2.8vmin;
+    margin-top: 3vmin;
+    margin-left: 0.6vw;
+    text-align: left;
+    display: grid;
+}
+
+.CurrentWDubIndexContainer{
+    text-align: end;
+}
+
+
+.CurrentWDubIndexContainer h4{
+    font-family: 'Prompt', sans-serif;
+    font-weight: 600;
+    font-size: 0.88vw;
+    color: #000;
+}
+
+
+.wDubInputMetamaskWrapper{
+    width: 35.3vw !important;
+    height: 3vmin !important;
+    margin-top: 1.7vmin !important;
+    grid-template-columns: 16vw 19vw !important;
+    display: grid !important;
+    margin-left: 2vw;
+}
+
+
+.wDubBtn{
+    background-color: #8E68E6;
+    color: #000;
+    outline: none;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 500;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    width: 40.5vw;
+    margin-left: 0.45vw;
+    margin-top: -2.6vmin;
+    height: 6.1vmin;
+    border: 0.12vw solid black;
+    border-bottom: black solid 0.27vw;
+    border-radius: 2.7vmin;
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    transition: all .2s;
+}
+
+.wDubBtn:hover{
+    background-color: #D9D9D9;
+}

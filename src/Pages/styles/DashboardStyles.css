@@ -1,6 +1,6 @@
 .DashboardWrapper{
     display: grid;
-    grid-template-rows: 19vmin 89vmin 11vmin;
+    grid-template-rows: 19vmin 103vmin 94vmin 17vmin;
 }
 
 .DashboardHeaderContainer{
@@ -17,6 +17,7 @@
 
 .DashboardHeaderContainerText{
     font-family: 'Public Pixel', sans-serif;
+    
     display: grid;
     align-items: center;
     margin-top: 6vmin;
@@ -44,9 +45,8 @@
 
 .DataBlockText{
     color: rgba(255, 255, 255, 0.6);
-    font-weight: 275;
     font-size: 2.75vw;
-
+    font-weight: 100;
     margin-top: 3.6vmin;
     display: grid;
     justify-content: start;

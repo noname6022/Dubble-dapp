@@ -24,10 +24,10 @@ export const DuubleDub = () => {
           value in return, so the total yield earned is the same.</p>
         </div>
 
-        <div className='wDubInputWrapper'>
-          <span className='wDubInputWrapperText'>From</span>
-          <div className='wDubInputContainer'>
-            <div className='wDubIconConatiner'>
+        <div className='InputWrapper'>
+          <span className='InputWrapperText'>From</span>
+          <div className='InputContainer'>
+            <div className='InputIconConatiner'>
               <DubInput/>
               <span>DUB</span>
             </div>
@@ -38,7 +38,7 @@ export const DuubleDub = () => {
               </span>
               <div className='InputBalanceContainerAdditionalInfo'>
               
-              <button className='wDubMaxBtn'>Max</button>
+              <button className='InputMaxBtn'>Max</button>
               <span>Balance: 0.00 DUB</span>
               </div>
             </div>
@@ -46,16 +46,16 @@ export const DuubleDub = () => {
           
         </div>
 
-        <div className='wDubArrowContainer'>
+        <div className='InputArrowContainer'>
         <img src={ArrowDown}/>
         </div>
 
-        <div className='wDubInputWrapper'>
-          <span className='wDubInputWrapperText'>To</span>
-          <div className='wDubInputContainer'>
-            <div className='wDubIconConatiner'>
+        <div className='InputWrapper'>
+          <span className='InputWrapperText'>To</span>
+          <div className='InputContainer'>
+            <div className='InputIconConatiner'>
               <WDubIcon/>
-              <span className='SecondWDubIconConatinerText'>wDUB</span>
+              <span className='SecondInputIconConatinerText'>wDUB</span>
             </div>
             <input type='text'/>
             <div className='InputBalanceContainer SecondInputBalanceContainer'>
@@ -69,11 +69,14 @@ export const DuubleDub = () => {
           
         </div>
 
-        <div className='wDubMetamaskWrapper'>
-        <div className='wDubMetamaskContainer'>
+        <div className='InputMetamaskWrapper wDubInputMetamaskWrapper'>
+        <div className='InputMetamaskContainer'>
         <WDubIcon/>
               <span>$wDUB</span>
-              <button className='wDubMetamaskBtn'><img src={WMetamaskIcon}/><PlusIcon/></button>
+              <button className='InputMetamaskBtn'><img src={WMetamaskIcon}/><PlusIcon/></button>
+        </div>
+        <div className='CurrentWDubIndexContainer'>
+          <h4>Current index = 1.11</h4>
         </div>
         </div>
 

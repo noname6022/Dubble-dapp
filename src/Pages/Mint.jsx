@@ -9,8 +9,10 @@ import usdcIcon from '../assets/CryptoCurrencies Icons/usdc.svg'
 import usdtIcon from '../assets/CryptoCurrencies Icons/usdt.svg'
 import algoIcon from '../assets/CryptoCurrencies Icons/algo.svg'
 import daiIcon from '../assets/CryptoCurrencies Icons/dai.svg'
-
+import RedeemBlock from "./COmponents/RedeemBlock";
+import MintBlock from "./COmponents/MintBlock";
 import { Hooks } from './Backend/Hooks'
+
 
 export const Mint = () => {
   const {active, setActive, handleClick, isRedeemActive, setIsRedeemActive, isMintActive, setIsMintActive, handleRedeemClick, handleMintClick} = Hooks()
@@ -95,9 +97,9 @@ export const Mint = () => {
 
       
       </div>
-      {isRedeemActive && <div className="redeem-text">Redeem text</div>}
+      {isRedeemActive && <RedeemBlock/>}
 
-      {isMintActive && <div className="mint-text">Mint text</div>}
+      {isMintActive && <MintBlock/>}
       </div>
 
 

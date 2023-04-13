@@ -175,8 +175,8 @@
     width: 43.8vw;
     border-radius: 2vmin;
     height: 71vmin;
-    grid-template-rows: 14vmin 12vmin;
-    align-items: center;
+    grid-template-rows: 15.6vmin 48.4vmin;
+    align-items: start;
     margin-left: 1.2vw;
 }
 
@@ -195,7 +195,7 @@
   padding: 0;
   margin: 0;
   margin-left: 0.45vw;
-  margin-top: -0.6vmin;
+  margin-top: 3.4vmin;
   height: 7.1vmin;
   border: 0.12vw solid black;
   border-bottom: black solid 0.27vw;

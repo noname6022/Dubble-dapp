@@ -71,6 +71,10 @@ export const Dashboard = () => {
           <h2 className='DataBlockText '>Collateral</h2>
         </div>
       </div>
+
+      <div>
+        <h3>Je</h3>
+      </div>
       <Footer/>
     </div>
   )
