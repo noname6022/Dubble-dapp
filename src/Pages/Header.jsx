@@ -25,27 +25,31 @@ export const Header = () => {
         <Link to="/wDub" className='LinkContainer'><img src={WDubIcon} className='WDubIcon'/>wDUB</Link>
         {/* <Link to="/Farm" className='LinkContainer'><img src={FarmIcon} className='FarmIcon'/>Farm</Link>*/}
       </div>
-      <div className='BalanceWrapper'>
-      <div className='BalanceContainer'>
-  <span className='BalanceText'>{formatNumber(256)} Dub</span>
-  <span className='BalanceText'>{formatNumber(259)} wDub</span>
-  <span className='BalanceText'>
-    <div className='hoverContainer'>
-      <button onClick={connectWallet}>
-        {active
-          ? account
-            ? account.slice(0, 4) + '...' + account.slice(-4)
-            : 'Connecting...'
-          : buttonText}
-      </button>
-      {active && (
-        <div className='hoverContent'>
-          <p>Your connected wallet info will appear here</p>
+      <div className='hoverContainer'>
+        <div className='BalanceWrapper'>
+          <div className='BalanceContainer'>
+            {active && (
+              <>
+                <span className='BalanceText'>{formatNumber(256)} Dub</span>
+                <span className='BalanceText'>{formatNumber(259)} wDub</span>
+              </>
+            )}
+            <span className='BalanceText'>
+              <button onClick={connectWallet}>
+                {active
+                  ? account
+                    ? account.slice(0, 4) + '...' + account.slice(-4)
+                    : 'Connecting...'
+                  : buttonText}
+              </button>
+            </span>
+          </div>
+          {active && (
+            <div className='hoverContent'>
+              <p>Your connected wallet info will appear here</p>
+            </div>
+          )}
         </div>
-      )}
-    </div>
-  </span>
-</div>
       </div>
     </div>
   )

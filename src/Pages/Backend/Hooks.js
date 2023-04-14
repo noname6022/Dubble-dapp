@@ -28,7 +28,6 @@ export const Hooks = () => {
       { value: "USDC", image: usdcIcon },
       { value: "USDT", image: usdtIcon },
       { value: "DAI", image: daiIcon },
-      { value: "ALGO", image: algoIcon },
     ];
   
     const [selectedOption, setSelectedOption] = useState(options[0]);
@@ -39,6 +38,11 @@ export const Hooks = () => {
       setShowOptions(false);
     };
 
+    const handleKeyPress = (e) => {
+      if (!/[\d.,]/.test(e.key)) {
+        e.preventDefault();
+      }
+    };
 
-  return { active, setActive, handleClick, isRedeemActive, setIsRedeemActive, isMintActive, setIsMintActive, handleRedeemClick, handleMintClick, options,selectedOption, setSelectedOption,showOptions, setShowOptions,handleOptionClick}
+  return { active, setActive, handleClick, isRedeemActive, setIsRedeemActive, isMintActive, setIsMintActive, handleRedeemClick, handleMintClick, options,selectedOption, setSelectedOption,showOptions, setShowOptions,handleOptionClick, handleKeyPress}
 }

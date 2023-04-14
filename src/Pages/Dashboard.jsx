@@ -4,6 +4,10 @@ import './styles/ColorfulBlocksStyles.css'
 import DashboardChartIcon from '../assets/DashboardChart'
 import Footer from './Footer'
 import { Hooks } from './Backend/Hooks'
+import usdcIcon from '../assets/CryptoCurrencies Icons/usdc.svg'
+import usdtIcon from '../assets/CryptoCurrencies Icons/usdt.svg'
+import algoIcon from '../assets/CryptoCurrencies Icons/algo.svg'
+import daiIcon from '../assets/CryptoCurrencies Icons/dai.svg'
 
 export const Dashboard = () => {
   const {active, setActive, handleClick, isRedeemActive, setIsRedeemActive, isMintActive, setIsMintActive, handleRedeemClick, handleMintClick} = Hooks()
@@ -67,8 +71,56 @@ export const Dashboard = () => {
 
         </div>
 
-        <div>
+        <div className='CollateralWrapper'>
           <h2 className='DataBlockText '>Collateral</h2>
+
+          <div className='CollateralContainer'>
+            <div className='CollateralContainerHead'>
+              <span>Stablecoin</span>
+              <span>Safety Score</span>
+              <span>Asset Value</span>
+              <span>% in Portfolio</span>
+              <hr/>
+            </div>
+
+            <div className='CollateralContainerInfo'>
+              <div className='CollateralContainerInfoValues'>
+                <div className='CollateralContainerInfoCurrency'><img src={usdtIcon}/><span>USDT</span></div>
+                <span className='CollateralContainerInfoCurrencyScore'>Very High</span>
+                <span><b>$ 1 296 171,08</b></span>
+                <div className='CollateralProgressContainer greenCollateralProgress'>
+                <progress value="12" max="100"> </progress><span>62% </span>
+                </div>
+                <hr/>
+              </div>
+
+              <div className='CollateralContainerInfoValues'>
+                <div className='CollateralContainerInfoCurrency'><img src={usdcIcon}/><span>USDC</span></div>
+                <span className='CollateralContainerInfoCurrencyScore'>Very High</span>
+                <span><b>$ 1 296 171,08</b></span>
+                <div className='CollateralProgressContainer  blueCollateralProgress'>
+                <progress value="12" max="100"> </progress><span>62% </span>
+                </div>
+                <hr/>
+              </div>
+
+              <div className='CollateralContainerInfoValues'>
+                <div className='CollateralContainerInfoCurrency CollateralContainerInfoCurrencyThird'><img src={daiIcon}/><span>DAI</span></div>
+                <span className='CollateralContainerInfoCurrencyScore'>Very High</span>
+                <span><b>$ 1 296 171,08</b></span>
+                <div className='CollateralProgressContainer yellowCollateralProgress'>
+                <progress value="64" max="100"> </progress><span>62% </span>
+                </div>
+                <hr/>
+              </div>
+
+            </div>
+
+
+
+
+          </div>
+
         </div>
       </div>
 

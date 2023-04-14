@@ -7,8 +7,12 @@ import DubInput from '../assets/InputIcons/DubInput'
 import WDubIcon from '../assets/InputIcons/WDubIcon'
 import WMetamaskIcon from '../assets/wDubIcons/MetamaskIcon.webp'
 import PlusIcon from '../assets/wDubIcons/PlusIcon'
+import { Hooks } from './Backend/Hooks'
 
 export const DuubleDub = () => {
+
+  const {options,selectedOption, setSelectedOption,showOptions, setShowOptions,handleOptionClick, handleKeyPress} = Hooks();
+
   return (
     <div  className='wDubWrapper'>
       <div className='wDubHeaderContainer'>
@@ -31,11 +35,8 @@ export const DuubleDub = () => {
               <DubInput/>
               <span>DUB</span>
             </div>
-            <input type='text'/>
+            <input type="text"  placeholder="0" onKeyPress={handleKeyPress}/>
             <div className='InputBalanceContainer'>
-              <span>
-                0.00
-              </span>
               <div className='InputBalanceContainerAdditionalInfo'>
               
               <button className='InputMaxBtn'>Max</button>
@@ -57,11 +58,8 @@ export const DuubleDub = () => {
               <WDubIcon/>
               <span className='SecondInputIconConatinerText'>wDUB</span>
             </div>
-            <input type='text'/>
+            <input type="text"  placeholder="0" onKeyPress={handleKeyPress}/>
             <div className='InputBalanceContainer SecondInputBalanceContainer'>
-              <span>
-                0.00
-              </span>
               <span className='SecondInputBalanceContainerAdditionalInfo'>Balance: 0.00 wDUB</span>
 
             </div>

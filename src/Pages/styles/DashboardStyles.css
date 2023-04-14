@@ -71,3 +71,201 @@ margin-left: 1vw;
 .DashboardTotalValueBlock{
     grid-area: 3;
 }
+
+.CollateralWrapper{
+    width: 100%;
+    display: grid;
+    justify-items: start;
+    grid-template-rows: 14.6vmin 71.7vmin;
+    height: fit-content;
+}
+
+.CollateralContainer{
+    background-color: #919B9E;
+    border-radius: 2vmin;
+    width: 43.7vw;
+    display: grid;
+    grid-template-rows: 15vmin 56vmin;
+}
+
+.CollateralContainerHead{
+    display: grid;
+    grid-template-columns: 10.7vw 9.3vw 11.5vw 10vw;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: 14.3vmin 0vmin;
+}
+
+.CollateralContainerHead hr{
+    margin: 0;
+    padding: 0;
+    margin-left: 33.3vw;
+    width: 40.5vw;
+    border: 0;
+    border-top: 0.12vw solid black;
+}
+
+.CollateralContainerHead span{
+    color: #000;
+    font-size: 1.2vw;
+    font-weight: 500;
+    height: fit-content;
+    margin-top: 2vmin;
+}
+
+.CollateralContainerInfoValues{
+    display: grid;
+    grid-template-columns: 10.7vw 9.3vw 11.5vw 10vw;
+    align-items: center;
+    grid-template-rows: 18vmin 3vmin;
+    height: fit-content;
+}
+
+.CollateralContainerInfo{
+    display: grid;
+    grid-template-rows: 19.4vmin 20vmin 15vmin;
+}
+
+.CollateralContainerInfoValues span{
+    color: #000;
+    font-size: 1.2vw;
+    font-weight: 500;
+    height: fit-content;
+    margin-top: 2vmin;
+
+}
+
+
+
+.CollateralContainerInfoValues b{
+    color: #000;
+    font-size: 1.2vw;
+    font-weight: 600;
+    height: fit-content;
+    margin-top: 2vmin;
+}
+
+.CollateralContainerInfoCurrency{
+    display: grid;
+    grid-template-columns: 6vw 4vw;
+    align-items: center;
+    justify-items: end;
+}
+
+.CollateralContainerInfoCurrency span{
+    color: #000;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+
+
+
+.CollateralContainerInfoCurrencyScore{
+    color: #000;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    font-weight: 300 !important;
+}
+
+
+
+.CollateralContainerInfoValues img{
+    width: 4vw;
+    height: 9.3vmin;
+    margin-top: 1.2vmin;
+}
+
+.CollateralContainerInfoValues:nth-child(3){
+    grid-template-rows: 17vmin 0vmin;
+}
+
+.CollateralContainerInfo hr{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-top: 0.12vw solid black;
+    margin-left: 1.5vw;
+    width: 41vw;
+}
+
+.CollateralContainerInfo :nth-child(3) hr{
+display: none;
+}
+
+.CollateralProgressContainer{
+    display: grid;
+    grid-template-columns: 5vw 5vw;
+    align-items: center;
+    justify-items: start;
+}
+
+.CollateralProgressContainer progress[value] {
+    width: 4.3vw;
+    margin-top: 1.4vmin;
+    border: 0;
+    border-radius: 1.7vmin;
+    display: grid;
+    align-content: center;
+    -moz-appearance: none; /* Remove default Firefox styles */
+  }
+  
+  .CollateralProgressContainer progress::-webkit-progress-bar {
+    border: 0;
+    height: 2.5vmin;
+    border-radius: 1.7vmin;
+    background-color: #FFF;
+  }
+
+  .CollateralProgressContainer progress::-webkit-progress-value {
+    border: 0;
+    height: 2.5vmin;
+    padding-left: 1vw;
+    border-radius: 1.3vmin;
+    background-color: red;
+
+}
+
+.greenCollateralProgress progress::-webkit-progress-value{
+    background-color: #79CE96 !important;
+
+    
+}
+
+.blueCollateralProgress progress::-webkit-progress-value{
+    background-color: #3A86D8  !important;
+
+    
+}
+
+.yellowCollateralProgress progress::-webkit-progress-value{
+    background-color: #E4D559 !important;
+
+    
+}
+
+  .CollateralProgressContainer progress::-moz-progress-bar {
+    border: 0;
+    height: 1.5vmin;
+    border-radius: 1.7vmin;
+    background-color: #FFF;
+  }
+  
+  .greenCollateralProgress progress::-moz-progress-bar {
+    background-color: #79CE96 !important;
+    height: 100%;
+  }
+  
+  .blueCollateralProgress progress::-moz-progress-bar {
+    background-color: #3A86D8 !important;
+    height: 100%;
+  }
+  
+  .yellowCollateralProgress progress::-moz-progress-bar {
+    background-color: #E4D559 !important;
+    height: 100%;
+  }
+
+.CollateralContainerInfoCurrencyThird{
+    grid-template-columns: 6vw 3.4vw !important;
+}

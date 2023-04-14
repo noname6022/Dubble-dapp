@@ -10,7 +10,7 @@ import { Hooks } from '../Backend/Hooks'
 import { DropdownArrow } from '../../assets/DropdownArrow'
 
 export const MintBlock = () => {
-    const {options,selectedOption, setSelectedOption,showOptions, setShowOptions,handleOptionClick} = Hooks();
+    const {options,selectedOption, setSelectedOption,showOptions, setShowOptions,handleOptionClick, handleKeyPress} = Hooks();
 
   return (
     <div className="MintBlock">
@@ -51,9 +51,8 @@ export const MintBlock = () => {
             )}
           </div>
         </div>
-        <input type="text" />
+        <input type="text"  placeholder="0" onKeyPress={handleKeyPress}/>
         <div className="InputBalanceContainer">
-          <span>0.00</span>
           <div className="InputBalanceContainerAdditionalInfo">
             <button className="InputMaxBtn">Max</button>
             <span>
@@ -75,11 +74,8 @@ export const MintBlock = () => {
       <DubInput/>
         <span>DUB</span>
       </div>
-      <input type='text'/>
+      <input type="text" placeholder="0" onKeyPress={handleKeyPress}/>
       <div className='InputBalanceContainer SecondInputBalanceContainer'>
-        <span>
-          0.00
-        </span>
         <span className='SecondInputBalanceContainerAdditionalInfo'>Balance: 0.00 wDUB</span>
 
       </div>
