@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import './styles/DashboardStyles.css'
 import './styles/ColorfulBlocksStyles.css'
 import DashboardChartIcon from '../assets/DashboardChart'
+import Tilt from 'react-parallax-tilt';
 import Footer from './Footer'
 import { Hooks } from './Backend/Hooks'
 import usdcIcon from '../assets/CryptoCurrencies Icons/usdc.svg'
@@ -35,7 +36,7 @@ export const Dashboard = () => {
     { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 56, procents: '56%' },
     { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 23, procents: '23%' },
     { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 56, procents: '56%' },
-    
+
   ];
 
   // Get the random colors from the Hooks function
@@ -50,22 +51,20 @@ export const Dashboard = () => {
       <div className='DashboardBlocks'>
         <div className='ProtocolDataBlock'>
           <h2 className='DataBlockText'>Protocol data</h2>
-
-          <div className='TotalValueBlock DashboardTotalValueBlock'>
+          <Tilt className='TotalValueBlock DashboardTotalValueBlock'>
         <h3>Total value locked</h3>
         <h2>$10.0 M</h2>
-      </div>
-
-          <div className='ActiveStrategyBlock DashboardActiveStrategy'>
+      </Tilt>
+          <Tilt  className='ActiveStrategyBlock DashboardActiveStrategy'>
         <h3>Active strategies</h3>
         <h2>3</h2>
-      </div>
+      </Tilt >
 
       
-      <div className='ProfitBlock'>
+      <Tilt  className='ProfitBlock'>
         <h3>Profit</h3>
         <h2>$1,200</h2>
-      </div>
+      </Tilt >
 
       <div className="APYBlock DashboardAPYBlock">
         <div className={`APYBlockBG ${active ? "active" : ""} DashboardAPYBlockBG`}>
@@ -86,15 +85,15 @@ export const Dashboard = () => {
           </div>
         </div>        </div>        </div>
 
-      <div className='BalanceBlock'>
+      <Tilt className='BalanceBlock'>
         <h3>Balance $DUB</h3>
         <h2>845</h2>
-      </div>
+      </Tilt> 
 
-      <div className='LRPBlock'>
+      <Tilt  className='LRPBlock'>
         <h3>Last Rebase Payout</h3>
         <h2>$1,200</h2>
-      </div>
+      </Tilt >
 
         </div>
 

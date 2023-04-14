@@ -11,6 +11,7 @@ import algoIcon from '../assets/CryptoCurrencies Icons/algo.svg'
 import daiIcon from '../assets/CryptoCurrencies Icons/dai.svg'
 import RedeemBlock from "./BlockComponents/RedeemBlock";
 import MintBlock from "./BlockComponents/MintBlock";
+import Tilt from 'react-parallax-tilt';
 import { Hooks } from './Backend/Hooks'
 
 
@@ -26,14 +27,14 @@ export const Mint = () => {
       <div className='MintBlocks'>
 
     <div className='MintFirstBlocks'>
-      <div className='TotalValueBlock'>
+      <Tilt className='TotalValueBlock'>
         <h3>Total value locked</h3>
         <h2>$10.0 M</h2>
-      </div>
-      <div className='ActiveStrategyBlock'>
+      </Tilt>
+      <Tilt className='ActiveStrategyBlock'>
         <h3>Active strategies</h3>
         <h2>3</h2>
-      </div>
+      </Tilt>
       
       <div className="APYBlock">
         <div className={`APYBlockBG ${active ? "active" : ""}`}>
@@ -57,7 +58,7 @@ export const Mint = () => {
       </div>
     </div>
 
-    <div className="ExchangeBlock">
+    <Tilt className="ExchangeBlock">
       <div className="ExchangeBlockText">
         <h3>Exchange Rates</h3>
         <hr/>
@@ -78,7 +79,7 @@ export const Mint = () => {
       <div className="LiveRatesInfoContainer">
         Live rates powered by <ChainlinkLogo/> 
       </div>
- </div>
+ </Tilt>
 
       <div className='MintRedeemBlockContainer'>
         <div className='MintRedeemBlockButtonsContainer'>
