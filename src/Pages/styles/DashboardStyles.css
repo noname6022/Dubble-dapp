@@ -1,6 +1,6 @@
 .DashboardWrapper{
     display: grid;
-    grid-template-rows: 19vmin 103vmin 94vmin 17vmin;
+    grid-template-rows: 19vmin 99vmin 98vmin 17vmin;
 }
 
 .DashboardHeaderContainer{
@@ -113,6 +113,11 @@ margin-left: 1vw;
     margin-top: 2vmin;
 }
 
+
+.CollateralContainerInfo{
+    display: grid;
+    grid-template-rows: 19.4vmin 20vmin 15vmin;
+}
 .CollateralContainerInfoValues{
     display: grid;
     grid-template-columns: 10.7vw 9.3vw 11.5vw 10vw;
@@ -121,15 +126,10 @@ margin-left: 1vw;
     height: fit-content;
 }
 
-.CollateralContainerInfo{
-    display: grid;
-    grid-template-rows: 19.4vmin 20vmin 15vmin;
-}
-
 .CollateralContainerInfoValues span{
     color: #000;
     font-size: 1.2vw;
-    font-weight: 500;
+    font-weight: 600;
     height: fit-content;
     margin-top: 2vmin;
 
@@ -144,12 +144,24 @@ margin-left: 1vw;
     height: fit-content;
     margin-top: 2vmin;
 }
+.CollateralContainerInfoValues img{
+    width: 4vw;
+    height: 9.3vmin;
+    margin-top: 1.2vmin;
+}
 
+.CollateralContainerInfoValues:nth-child(3){
+    grid-template-rows: 17vmin 0vmin;
+}
 .CollateralContainerInfoCurrency{
     display: grid;
     grid-template-columns: 6vw 4vw;
     align-items: center;
     justify-items: end;
+}
+
+.CollateralContainerInfoCurrencyThird{
+    grid-template-columns: 6vw 3.4vw !important;
 }
 
 .CollateralContainerInfoCurrency span{
@@ -170,15 +182,9 @@ margin-left: 1vw;
 
 
 
-.CollateralContainerInfoValues img{
-    width: 4vw;
-    height: 9.3vmin;
-    margin-top: 1.2vmin;
-}
 
-.CollateralContainerInfoValues:nth-child(3){
-    grid-template-rows: 17vmin 0vmin;
-}
+
+
 
 .CollateralContainerInfo hr{
     margin: 0;
@@ -193,14 +199,14 @@ margin-left: 1vw;
 display: none;
 }
 
-.CollateralProgressContainer{
+.ProgressContainer{
     display: grid;
     grid-template-columns: 5vw 5vw;
     align-items: center;
     justify-items: start;
 }
 
-.CollateralProgressContainer progress[value] {
+.ProgressContainer progress[value] {
     width: 4.3vw;
     margin-top: 1.4vmin;
     border: 0;
@@ -208,16 +214,22 @@ display: none;
     display: grid;
     align-content: center;
     -moz-appearance: none; /* Remove default Firefox styles */
+    -moz-appearance: none; /* Remove default Firefox styles */
+    appearance: none; /* Remove default styles for other browsers */
+    -webkit-appearance: none; /* Remove default styles for WebKit browsers */
   }
+
+
   
-  .CollateralProgressContainer progress::-webkit-progress-bar {
+  
+  .ProgressContainer progress::-webkit-progress-bar {
     border: 0;
     height: 2.5vmin;
     border-radius: 1.7vmin;
     background-color: #FFF;
   }
 
-  .CollateralProgressContainer progress::-webkit-progress-value {
+  .ProgressContainer progress::-webkit-progress-value {
     border: 0;
     height: 2.5vmin;
     padding-left: 1vw;
@@ -226,46 +238,241 @@ display: none;
 
 }
 
-.greenCollateralProgress progress::-webkit-progress-value{
+.greenProgress progress::-webkit-progress-value{
     background-color: #79CE96 !important;
 
     
 }
 
-.blueCollateralProgress progress::-webkit-progress-value{
+.blueProgress progress::-webkit-progress-value{
     background-color: #3A86D8  !important;
 
     
 }
 
-.yellowCollateralProgress progress::-webkit-progress-value{
+.yellowProgress progress::-webkit-progress-value{
     background-color: #E4D559 !important;
 
     
 }
 
-  .CollateralProgressContainer progress::-moz-progress-bar {
+  .ProgressContainer progress::-moz-progress-bar {
     border: 0;
     height: 1.5vmin;
     border-radius: 1.7vmin;
     background-color: #FFF;
   }
   
-  .greenCollateralProgress progress::-moz-progress-bar {
+  .greenProgress progress::-moz-progress-bar {
     background-color: #79CE96 !important;
     height: 100%;
   }
   
-  .blueCollateralProgress progress::-moz-progress-bar {
+  .blueProgress progress::-moz-progress-bar {
     background-color: #3A86D8 !important;
     height: 100%;
   }
   
-  .yellowCollateralProgress progress::-moz-progress-bar {
+  .yellowProgress progress::-moz-progress-bar {
     background-color: #E4D559 !important;
     height: 100%;
   }
 
-.CollateralContainerInfoCurrencyThird{
-    grid-template-columns: 6vw 3.4vw !important;
+
+
+.StrategiesWrapper{
+    margin-left: 1.35vw;
+    display: grid;
+    grid-template-rows: 14.56vmin 80.5vmin;
+    align-items: stretch;
+    margin-right: 1.2vw;
 }
+
+.StrategiesContainer{
+    background-color: #E6E9E8;
+    color: #000;
+    border-radius: 2vmin;
+}
+
+.StrategiesContainerHead{
+    display: grid;
+    grid-template-columns: 18.7vw 28vw 20vw 24.8vw;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: 13.3vmin 0vmin;
+    justify-content: start;
+}
+
+.StrategiesContainerHead hr{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 39.2vw;
+    width: 89.22vw;
+    border: 0;
+    border-top: 0.12vw solid black;
+}
+
+.StrategiesContainerHead span{
+    color: #000;
+    font-size: 1.5vw;
+    font-weight: 500;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 0.5vmin;
+}
+
+.StrategiesContainerHead span:nth-child(4){
+    text-align: right;
+    width: 100%;
+}
+
+.StrategiesInformationBlock{
+  overflow-y: scroll;
+height: 55vmin;  
+margin-right: 1.9vw;    
+scrollbar-width: auto;
+scrollbar-color: #575757 #b3b3b3 ;
+}
+
+
+
+  /* Chrome, Edge, and Safari */
+  .StrategiesInformationBlock::-webkit-scrollbar {
+    width: 0.8vw;
+  }
+
+  .StrategiesInformationBlock::-webkit-scrollbar-track {
+    background: #b3b3b3;
+    border-radius: 1vmin;
+  }
+
+  .StrategiesInformationBlock::-webkit-scrollbar-thumb {
+    background-color: #575757;
+    border-radius: 1vmin;
+    border: 0px none #575757;
+  }
+  
+
+
+
+
+
+
+
+
+  .StrategiesInformationValues{
+    display: grid;
+    grid-template-columns: 26.7vw 24.3vw 30.5vw 11.7vw;
+    align-items: center;
+    grid-template-rows: 12.7vmin 1.14vmin;
+    height: fit-content;
+    justify-items: start;
+}
+
+.StrategiesInformationValues hr{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-top: 0.12vw solid black;
+    margin-left: 3.9vw;
+    width: 89.3vw;
+}
+
+.StrategiesInformationValues span{
+    color: #000;
+    font-size: 1.2vw;
+    font-weight: 600;
+    height: fit-content;
+    margin-top: 2vmin;
+
+}
+
+
+
+
+.StrategiesInformationValues img{
+    width: 4vw;
+    height: 8vmin;
+}
+
+
+.StrategiesInformationStrategy{
+    display: grid;
+    grid-template-columns: 5.25vw auto;
+    align-items: center;
+    justify-items: start;
+    margin-top: 3vmin;
+    margin-left: 3.8vw;
+}
+
+
+.StrategiesInformationStrategy a{
+    color: #000;
+    font-size: 1.4vw;
+    font-weight: 600;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: auto 2vw;
+    align-items: center;
+}
+
+
+
+
+.StrategiesInformationChainName{
+    display: grid;
+    grid-template-columns: 5.3vw auto;
+    margin-top: 2vmin;
+}
+
+.StrategiesInformationChainName span{
+    color: #000;
+    font-size: 1.43vw;
+    font-weight: 400;
+    margin-top: 3vmin;
+}
+
+.StrategiesInformationChainLogo{
+    width: 4.3vw !important;
+    height: 9.3vmin !important;
+}
+
+.StrategiesInformationAssetValueNumber{
+    margin-top: 3.24vmin !important;
+}
+
+.StrategiesInformationAssetValueNumber b{
+    color: #000;
+    font-size: 1.567vw;
+    font-weight: 400;
+    height: fit-content;
+
+}
+
+
+.StrategiesProgressContainer{
+    display: grid;
+    grid-template-columns: 4.8vw auto;
+    align-items: center;
+    justify-items: start;
+    margin-top: 1.6vmin;
+}
+
+.progressRandomColor progress::-webkit-progress-value {
+    background-color: var(--random-color) !important;
+}
+
+.progressRandomColor progress::-moz-progress-bar {
+    background-color: var(--random-color) !important;
+    height: 100%;
+}  
+
+
+
+@-moz-document url-prefix() {
+    .ProgressContainer progress[value] {
+        background-color: #fff;
+        margin-top: 1.7vmin;
+      }
+  }

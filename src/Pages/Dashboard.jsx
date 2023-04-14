@@ -6,13 +6,40 @@ import Footer from './Footer'
 import { Hooks } from './Backend/Hooks'
 import usdcIcon from '../assets/CryptoCurrencies Icons/usdc.svg'
 import usdtIcon from '../assets/CryptoCurrencies Icons/usdt.svg'
-import algoIcon from '../assets/CryptoCurrencies Icons/algo.svg'
 import daiIcon from '../assets/CryptoCurrencies Icons/dai.svg'
+import AaveLogo from '../assets/CryptoCurrencies Icons/AaveLogo.webp'
+import ArbitrumLogo from '../assets/CryptoCurrencies Icons/ArbitrumLogo.webp'
+import { OpenInNewTab } from '../assets/OpenInNewTab'
 
 export const Dashboard = () => {
-  const {active, setActive, handleClick, isRedeemActive, setIsRedeemActive, isMintActive, setIsMintActive, handleRedeemClick, handleMintClick} = Hooks()
+  const {active, setActive, handleClick, isRedeemActive, setIsRedeemActive,  randomColors, setRandomColors, getRandomColor, isMintActive, setIsMintActive, handleRedeemClick, handleMintClick} = Hooks()
 
- 
+  const strategiesData = [
+    { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 23, procents: '23%' },
+    { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 56, procents: '56%' },
+    { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 23, procents: '23%' },
+    { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 56, procents: '56%' },
+    { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 23, procents: '23%' },
+    { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 56, procents: '56%' },
+    { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 23, procents: '23%' },
+    { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 56, procents: '56%' },
+    { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 23, procents: '23%' },
+    { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 56, procents: '56%' },
+    { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 23, procents: '23%' },
+    { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 56, procents: '56%' },
+    { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 23, procents: '23%' },
+    { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 56, procents: '56%' },
+    { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 23, procents: '23%' },
+    { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 56, procents: '56%' },
+    { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 23, procents: '23%' },
+    { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 56, procents: '56%' },
+    { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 23, procents: '23%' },
+    { name: 'Aave - USDT', logo: AaveLogo, chainName: 'Arbitrum', chainLogo: ArbitrumLogo, assetValue: '1 296 171,325', progressValue: 56, procents: '56%' },
+    
+  ];
+
+  // Get the random colors from the Hooks function
+  const hooks = Hooks(strategiesData.length);
 
   return (
     <div  className='DashboardWrapper'>
@@ -88,7 +115,7 @@ export const Dashboard = () => {
                 <div className='CollateralContainerInfoCurrency'><img src={usdtIcon}/><span>USDT</span></div>
                 <span className='CollateralContainerInfoCurrencyScore'>Very High</span>
                 <span><b>$ 1 296 171,08</b></span>
-                <div className='CollateralProgressContainer greenCollateralProgress'>
+                <div className='ProgressContainer greenProgress'>
                 <progress value="12" max="100"> </progress><span>62% </span>
                 </div>
                 <hr/>
@@ -98,7 +125,7 @@ export const Dashboard = () => {
                 <div className='CollateralContainerInfoCurrency'><img src={usdcIcon}/><span>USDC</span></div>
                 <span className='CollateralContainerInfoCurrencyScore'>Very High</span>
                 <span><b>$ 1 296 171,08</b></span>
-                <div className='CollateralProgressContainer  blueCollateralProgress'>
+                <div className='ProgressContainer blueProgress'>
                 <progress value="12" max="100"> </progress><span>62% </span>
                 </div>
                 <hr/>
@@ -108,7 +135,7 @@ export const Dashboard = () => {
                 <div className='CollateralContainerInfoCurrency CollateralContainerInfoCurrencyThird'><img src={daiIcon}/><span>DAI</span></div>
                 <span className='CollateralContainerInfoCurrencyScore'>Very High</span>
                 <span><b>$ 1 296 171,08</b></span>
-                <div className='CollateralProgressContainer yellowCollateralProgress'>
+                <div className='ProgressContainer yellowProgress'>
                 <progress value="64" max="100"> </progress><span>62% </span>
                 </div>
                 <hr/>
@@ -124,8 +151,39 @@ export const Dashboard = () => {
         </div>
       </div>
 
-      <div>
-        <h3>Je</h3>
+      <div className='StrategiesWrapper'>
+      <h2 className='DataBlockText '>Strategies</h2>
+      <div className='StrategiesContainer'>
+      <div className='StrategiesContainerHead'>
+              <span>Strategy</span>
+              <span>Chain</span>
+              <span>Net asset value</span>
+              <span>% in Portfolio</span>
+              <hr/>
+            </div>
+            <div className='StrategiesInformationBlock'>
+{/*start of all blocks */}
+{strategiesData.map((strategy, index) => (
+        <div key={index} className='StrategiesInformationValues'>
+          <div className='StrategiesInformationStrategy'>
+            <img src={strategy.logo} /><a href='https://www.google.com' target='_blank'>{strategy.name}<OpenInNewTab /></a>
+          </div>
+          <div className='StrategiesInformationChainName'>
+            <img src={strategy.chainLogo} className='StrategiesInformationChainLogo' /><span>{strategy.chainName}</span>
+          </div>
+          <span className='StrategiesInformationAssetValueNumber'><b>$ {strategy.assetValue}</b></span>
+          <div className="ProgressContainer progressRandomColor StrategiesProgressContainer" style={{ "--random-color": hooks.randomColors[index] }}>
+            <progress value={strategy.progressValue} max="100"> </progress><span>{strategy.procents}</span>
+          </div>
+          <hr />
+        </div>
+      ))}
+
+
+        
+{/*end of all blocks */}
+              </div>
+      </div>
       </div>
       <Footer/>
     </div>

@@ -35,7 +35,7 @@ export const DuubleDub = () => {
               <DubInput/>
               <span>DUB</span>
             </div>
-            <input type="text"  placeholder="0" onKeyPress={handleKeyPress}/>
+            <input type="text"  placeholder="0.00" onKeyPress={handleKeyPress}/>
             <div className='InputBalanceContainer'>
               <div className='InputBalanceContainerAdditionalInfo'>
               
@@ -58,7 +58,7 @@ export const DuubleDub = () => {
               <WDubIcon/>
               <span className='SecondInputIconConatinerText'>wDUB</span>
             </div>
-            <input type="text"  placeholder="0" onKeyPress={handleKeyPress}/>
+            <input type="text"  placeholder="0.00" onKeyPress={handleKeyPress}/>
             <div className='InputBalanceContainer SecondInputBalanceContainer'>
               <span className='SecondInputBalanceContainerAdditionalInfo'>Balance: 0.00 wDUB</span>
 
