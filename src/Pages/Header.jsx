@@ -30,8 +30,8 @@ export const Header = () => {
           <div className='BalanceContainer'>
             {active && (
               <>
-                <span className='BalanceText'>{formatNumber(256)} Dub</span>
-                <span className='BalanceText'>{formatNumber(259)} wDub</span>
+                <span className='BalanceText'>{formatNumber(278)} Dub</span>
+                <span className='BalanceText'>{formatNumber(258)} wDub</span>
               </>
             )}
             <span className='BalanceText'>
@@ -46,7 +46,45 @@ export const Header = () => {
           </div>
           {active && (
             <div className='hoverContent'>
-              <p>Your connected wallet info will appear here</p>
+              <div className='ConnectedChainInfo'><div  className='ConnectedChainInfoCircle'/><span>Connected to Arbitrum</span></div>
+              <span className='hoverWalletName'> {active
+                  ? account
+                    ? account.slice(0, 6) + '...' + account.slice(-4)
+                    : 'Wallet error!'
+                  : buttonText}</span>
+                  <div className='hoverContentCurrencies'>
+
+                    <div className='hoverContentCurrency'>
+                      <div  className='hoverContentCurrencyName'><span>DUB</span></div>
+                      <span>356.813</span>
+                      <hr/>
+                    </div>
+                    
+                    <div className='hoverContentCurrency'>
+                      <div  className='hoverContentCurrencyName'><span>wDUB</span></div>
+                      <span>356.8513</span>
+                      <hr/>
+                    </div>
+
+                    <div className='hoverContentCurrency'>
+                      <div  className='hoverContentCurrencyName'><span>USDT</span></div>
+                      <span>356.813</span>
+                      <hr/>
+                    </div>
+
+                 <div className='hoverContentCurrency'>
+                      <div  className='hoverContentCurrencyName'><span>USDC</span></div>
+                      <span>3888888856.813</span>
+                      <hr/>
+                    </div>
+                                        
+                    <div className='hoverContentCurrency'>
+                      <div  className='hoverContentCurrencyName'><span>DAI</span></div>
+                      <span>356.8513</span>
+                      <hr/>
+                    </div>
+
+                  </div>
             </div>
           )}
         </div>

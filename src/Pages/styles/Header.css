@@ -169,9 +169,11 @@
     position: absolute;
     background-color: #865BE3;
     color: #000;
-    width: 76%;
-    height: 17vmin;
+    width: 77%;
+    height: 23.5vmin;
     padding: 1vmin;
+    padding-right: 2.5vw;
+    padding-top: 2.4vmin;
     top: -0.65vmin;
     z-index: 1;
     box-sizing: border-box;
@@ -180,6 +182,9 @@
     border-radius: 2.3vmin;
     animation-duration: 0.45s;
     animation-name: slidein;
+    grid-template-rows: 3vmin 2vmin 14.5vmin;
+    align-items: end;
+    justify-items: end;
   }
   
   @keyframes slidein {
@@ -194,4 +199,58 @@
   
   .hoverContainer:hover .hoverContent {
     display: grid;
+
+}
+
+.ConnectedChainInfo{
+    display: grid;
+    grid-template-columns: 1.5vw auto;
+    justify-items: start;
+    font-size: 0.78vw;
+}
+
+.ConnectedChainInfoCircle{
+    background-color: #79CE96;
+    width: 1.3vw;
+    border-radius: 2vmin;
+    text-align: left;
+}
+
+.hoverWalletName{
+    font-size: 0.78vw;
+    font-weight: 600;
+}
+
+.hoverContentCurrencies{
+    display: grid;
+    grid-template-rows: 2.4vmin 2.6vmin 2.6vmin 2.7vmin 3.3vmin;
+    align-items: start;
+}
+
+
+.hoverContentCurrency{
+    display: grid;
+    width: 15vw;
+    grid-template-columns: 2.6vw auto;
+    grid-template-rows: 1.8vmin 1vmin;
+    font-size: 0.6vw;
+    justify-items: end;
+}
+
+.hoverContentCurrencyName{
+    text-align: left;
+    width: 2.34vw;
+}
+
+.hoverContentCurrencyName span{
+    font-size: 0.6vw;
+}
+
+.hoverContentCurrency hr{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-top: 0.1vw solid black;
+    width: 15vw;
+    margin-right: -12.6vw;
 }
