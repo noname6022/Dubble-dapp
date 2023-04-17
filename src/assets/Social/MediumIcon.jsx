@@ -5,6 +5,13 @@ const Svg = styled.svg`
     width: 2.5vw;
     height: 4.3vh;
     transition: all .3s;
+    @media (max-width: 600px){
+      width: 10.5vw;
+    height: 3.3vh;
+    path{
+     fill: black; 
+    }
+    }
 `;
 
 export const MediumIcon = () => {

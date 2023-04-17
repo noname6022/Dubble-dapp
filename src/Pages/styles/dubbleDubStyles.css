@@ -114,3 +114,93 @@
 .wDubBtn:hover{
     background-color: #D9D9D9;
 }
+
+@media (max-width: 600px){
+    .wDubWrapper {
+        display: grid;
+        grid-template-rows: 28.5vmin 144vmin 13.6vmin;
+    }
+
+    .wDubHeaderContainer {
+        border-bottom-left-radius: 9.57vmin;
+        border-bottom-right-radius: 9.57vmin;
+        grid-template-columns: auto;
+        align-items: center;
+    }
+.wDubHeaderContainerText {
+    margin-top: 2vmin;
+}
+
+    .wDubHeaderContainerText h1 {
+        font-family: 'Public Pixel', sans-serif;
+        font-size: 11vw;
+        letter-spacing: 1vw;
+        margin-left: 1vw;
+    }
+
+    .wDubBlockWrapper {
+        display: grid;
+        margin-top: 5.6vmin;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .wDubBlockContainer {
+        background-color: #D9D9D9;
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+        width: 95vw;
+        border-radius: 5vmin;
+        height: 96vmin;
+        grid-template-rows: 22vmin 19vmin 7vmin 15vmin 10vmin 16vmin;
+        align-items: center;
+    }
+
+    .wDubBlockContainer p {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 1.8vw;
+        font-weight: 500;
+        line-height: 3.6vmin;
+        margin-top: 2vmin;
+        margin-left: -1.8vw;
+        text-align: left;
+        display: grid;
+    }
+
+    .wDubInputMetamaskWrapper {
+        width: 63.3vw !important;
+        height: 6vmin !important;
+        margin-top: 1.7vmin !important;
+        grid-template-columns: 30vw 33vw !important;
+        display: grid !important;
+        margin-left: 2vw;
+    }
+
+    .wDubBtn {
+        background-color: #8E68E6;
+        color: #000;
+        outline: none;
+        font-family: 'Prompt', sans-serif;
+        font-weight: 500;
+        font-size: 3.5vw;
+        padding: 0;
+        margin: 0;
+        width: 58.5vw;
+        margin-left: 0.45vw;
+        margin-top: 4.4vmin;
+        height: 12.1vmin;
+        border: 0.8vw solid black;
+        border-bottom: black solid 2vw;
+        border-radius: 5.7vmin;
+        cursor: pointer;
+        display: grid;
+        align-items: center;
+        align-content: center;
+        transition: all .2s;
+    }
+
+
+
+
+}

@@ -5,6 +5,14 @@ const Svg = styled.svg`
 width: 2.5vw;
     height: 4vh;
     transition: all .3s;
+    @media (max-width: 600px){
+      width: 13.5vw;
+    height: 5vh;
+    path{
+     fill: black; 
+    }
+    
+    }
 `;
 
 export const DiscordIcon = () => {

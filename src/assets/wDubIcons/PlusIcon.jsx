@@ -4,6 +4,10 @@ import styled from 'styled-components';
 const Svg = styled.svg`
     width: 1vw;
     height: 1vmin;
+    @media (max-width:600px){
+      width: 2vw;
+    height: 2vmin;
+    }
     `
 export const PlusIcon = () => {
   return (

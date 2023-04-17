@@ -36,3 +36,28 @@
     color: #565454;
     font-size: 0.85vw;
 }
+
+@media (max-width: 600px){
+    .CopyrightContainer h3 {
+        font-family: 'Oxanium', sans-serif;
+        font-weight: 400;
+        color: #565454;
+        font-size: 2.565vw;
+    }
+
+    .SocialContainer {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 15.3vw 30vw 10vw;
+        align-items: center;
+        width: fit-content;
+        margin-left: 22vw;
+        transition: all .3s;
+        user-select: none;
+        z-index: 1;
+        filter: none;
+    }
+
+
+
+}

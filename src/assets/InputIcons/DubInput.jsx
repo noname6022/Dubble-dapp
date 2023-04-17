@@ -4,6 +4,10 @@ import styled from 'styled-components';
 const Svg = styled.svg`
     width: 2.5vw;
     height: 3.5vmin;
+    @media (max-width: 600px){
+      width: 4.5vw;
+    height: 4.5vmin;
+    }
 `;
 
 export const DubInput = () => {

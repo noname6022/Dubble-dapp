@@ -5,6 +5,13 @@ const Svg = styled.svg`
     width: 2.2vw;
     height: 4vh;
     transition: all .3s;
+    @media (max-width: 600px){
+      width: 11.2vw;
+    height: 4vh;
+    path{
+     fill: black; 
+    }
+    }
 `;
 
 export const TwitterIcon = () => {

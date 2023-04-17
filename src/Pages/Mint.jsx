@@ -13,6 +13,7 @@ import RedeemBlock from "./BlockComponents/RedeemBlock";
 import MintBlock from "./BlockComponents/MintBlock";
 import Tilt from 'react-parallax-tilt';
 import { Hooks } from './Backend/Hooks'
+import MediaQuery from 'react-responsive'
 
 
 export const Mint = () => {
@@ -22,7 +23,9 @@ export const Mint = () => {
     <div  className='MintWrapper'>
       <div className='MintHeaderContainer'>
         <div className='MintHeaderContainerText'><h1>Mint</h1></div>
+        <MediaQuery minWidth={601}>
         <div className='MintHeaderContainerAnimation'><MintSvg/></div>
+        </MediaQuery>
       </div>
       <div className='MintBlocks'>
 
