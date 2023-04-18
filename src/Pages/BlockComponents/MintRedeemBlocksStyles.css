@@ -140,3 +140,155 @@
     display: flex;
     align-items: center;
   }
+
+@media (max-width: 600px) {
+  .MintBlock {
+    display: grid;
+    grid-template-rows: 14vmin 10vmin 12.45vmin 8.6vmin 13.89vmin;
+    align-items: start;
+    justify-items: center;
+}
+
+.RedeemBlock{
+  display: grid;
+  grid-template-rows: 14vmin 10vmin 12.45vmin 8.6vmin 13.89vmin;
+  align-items: start;
+  justify-items: center;
+}
+
+.MintRedeemBlockParagraph {
+  font-size: 1.8vw;
+  line-height: 3.38vmin;
+  text-align: left;
+  margin-left: -3vw;
+}
+.InputMetamaskWrapper {
+  width: 33.3vw;
+  height: 3vmin;
+  margin-top: 2.7vmin;
+
+  display: grid;
+  margin-left: -31vw;
+}
+.InputMintRedeemMetamaskContainer{
+  width: 35vw;
+  height: 7.7vmin;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  padding-top: 0.1vmin;
+  justify-items: end;
+  column-gap: 318vw;
+  flex-wrap: nowrap;
+  margin-left: 1vw;
+  justify-content: flex-start;
+}
+
+.purpleMintRedeemDUB{
+ filter: hue-rotate(48deg);
+    display: flex;
+    align-items: center;
+    column-gap: 2.1vw;
+} 
+
+.MintRedeemBtn {
+  background-color: #8E68E6;
+  color: #000;
+  outline: none;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 500;
+  font-size: 3.5vw;
+  padding: 0;
+  margin: 0;
+  width: 52.5vw;
+  margin-left: 0.45vw;
+  margin-top: -2.6vmin;
+  height: 12.1vmin;
+  border: 0.8vw solid black;
+  border-bottom: black solid 2vw;
+  border-radius: 5.7vmin;
+  cursor: pointer;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  transition: all .2s;
+}
+
+.DropdownSelectButton {
+  width: 19vw;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 600;
+}
+
+.dropdown {
+  width: 18vw;
+}
+
+.dropdown-button {
+  background-color: #D9D9D9;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  cursor: pointer;
+  grid-template-columns: 10.6vw 5.3vw 5vw;
+  margin-left: 0.99vw;
+  display: grid;
+  align-items: center;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 600;
+  font-size: 2.97vw;
+  justify-content: center;
+  justify-items: center;
+  color: #000;
+}
+
+.option-image {
+  width: 5vw;
+  height: 5vmin;
+}
+
+.dropdown-options {
+  display: grid;
+  position: absolute;
+  background-color: #D9d9d9;
+  z-index: 1;
+  width: 18vw;
+  left: 1.4vw;
+  top: 7.35vmin;
+  justify-items: start;
+  justify-content: center;
+  border: 1vw solid black;
+  border-top: 0;
+  border-bottom-right-radius: 3.7vmin;
+  border-bottom-left-radius: 3.7vmin;
+  transition: all .1s;
+}
+
+
+.dropdown-option {
+  display: grid;
+  grid-template-columns: 7.3vw 7.25vw;
+  align-items: center;
+  height: 7vmin;
+  cursor: pointer;
+  width: 7.3vw;
+  justify-content: start;
+  align-content: center;
+  font-weight: 600;
+  font-size: 2.4vw;
+  padding-left: 0.8vw;
+  padding-right: 10vw;
+  justify-items: center;
+}
+
+.dropdown-option:last-child {
+  border-bottom-right-radius: 2.8vmin;
+  border-bottom-left-radius: 2.8vmin;
+}
+
+}
+

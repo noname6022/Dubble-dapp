@@ -57,7 +57,7 @@ const MobileMenu = ({ isOpen, toggleMenu }) => (
         </a>
     </div>
     <div className='CopyrightContainer'>
-        <h3>Copyright © 2023 Dubble Exchange</h3>
+        <h3 style={{color: '#000000'}}>Copyright © 2023 Dubble Exchange</h3>
     </div>
   </div>
 

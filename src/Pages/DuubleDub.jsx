@@ -13,7 +13,7 @@ import MediaQuery from 'react-responsive'
 
 export const DuubleDub = () => {
 
-  const {options,selectedOption, setSelectedOption,showOptions, setShowOptions,handleOptionClick, handleKeyPress} = Hooks();
+  const {options,selectedOption, deviceType, setDeviceType, detectDeviceType,  setSelectedOption,showOptions, setShowOptions,handleOptionClick, handleKeyPress} = Hooks();
 
   return (
     <div  className='wDubWrapper'>
@@ -48,7 +48,7 @@ export const DuubleDub = () => {
               type="text"
                 onKeyPress={handleKeyPress}
                 pattern="[0-9]*\.?[0-9]*"
-                inputmode="decimal"
+                inputmode={deviceType === 'android' ? 'decimal' : ''}
                 placeholder="0.00"
               />
             <div className='InputBalanceContainer'>
@@ -77,7 +77,7 @@ export const DuubleDub = () => {
               type="text"
                 onKeyPress={handleKeyPress}
                 pattern="[0-9]*\.?[0-9]*"
-                inputmode="decimal"
+                inputmode={deviceType === 'android' ? 'decimal' : ''}
                 placeholder="0.00"
               />
             <div className='InputBalanceContainer SecondInputBalanceContainer'>

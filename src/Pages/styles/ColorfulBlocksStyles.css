@@ -249,3 +249,131 @@
       margin-left: 1.1vw;
     
     }
+
+    @media (max-width: 600px) {
+      .TotalValueBlock {
+        background-color: #E27759;
+        border-radius: 4.7vmin;
+        color: #000;
+        display: grid;
+        justify-items: start;
+        align-items: center;
+        justify-content: start;
+        grid-template-rows: 20.5vmin 9vmin;
+        user-select: none;
+    }
+
+    .TotalValueBlock h3 {
+      font-weight: 500;
+      font-size: 5.1vw;
+      margin-left: 8.3vw;
+  }
+
+  .TotalValueBlock h2 {
+    font-weight: 400;
+    font-size: 15.6vw;
+    margin-left: 8.1vw;
+}
+
+.ActiveStrategyBlock {
+  grid-template-rows: 31.5vmin 0.5vmin;
+  border-radius: 4.7vmin;
+  user-select: none;
+}
+
+.ActiveStrategyBlock  h3 {
+  font-weight: 500;
+  font-size: 5.1vw;
+  margin-left: 8.3vw;
+}
+
+.ActiveStrategyBlock  h2 {
+font-weight: 400;
+font-size: 15.6vw;
+margin-left: 8.1vw;
+}
+
+.APYBlock {
+  margin-top: 2.5vmin;
+  user-select: none;
+}
+
+.APYBlockBG {
+  background-color: #8E68E6;
+  border-radius: 4.7vmin;
+  color: #000;
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  justify-content: start;
+  grid-template-rows: 23vmin 4vmin 13vmin;
+  padding: 0vmin;
+  user-select: none;
+}
+
+  .APYBlockBG h3 {
+    font-weight: 500;
+    font-size: 5.1vw;
+    margin-left: 8.3vw;
+}
+
+  .APYBlockBG h2 {
+  font-weight: 400;
+  font-size: 15.6vw;
+  margin-left: 8.1vw;
+}
+
+.toggle-container {
+  position: absolute;
+  left: 58vw;
+  top: 158vmin;
+  user-select: none;
+}
+
+.toggle {
+  width: 30.2vw;
+  height: 6.86vmin;
+  border-radius: 4vmin;
+}
+
+.knob {
+  margin-left: 0.5vw;
+  width: 14.8vw;
+  height: 6vmin;
+  border-radius: 4vmin;
+  background-color: #8E68E6;
+  display: grid;
+  transition: all 0.25s ease-in-out;
+  align-items: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.knob.active {
+  transform: translateX(14.3vw);
+}
+
+.label span {
+  font-weight: 500;
+  font-size: 2.5vw;
+  color: #fff;
+}
+
+.non-active-label.active {
+  width: fit-content;
+  font-size: 2.5vw;
+  transition: all 0.25s ease-in-out;
+  transform: translateX(2.5vw);
+}
+
+.non-active-label {
+  width: fit-content;
+  transition: all 0.25s ease-in-out;
+  transform: translateX(-11.4vw);
+  font-weight: 500;
+  font-size: 2.5vw;
+  position: relative;
+  bottom: -0.01vmin;
+}
+
+    }

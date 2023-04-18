@@ -8,9 +8,10 @@ import WMetamaskIcon from '../../assets/wDubIcons/MetamaskIcon.webp'
 import PlusIcon from '../../assets/wDubIcons/PlusIcon'
 import { Hooks } from '../Backend/Hooks'
 import { DropdownArrow } from '../../assets/DropdownArrow'
+import MediaQuery from 'react-responsive'
 
 export const MintBlock = () => {
-    const {options,selectedOption, setSelectedOption,showOptions, setShowOptions,handleOptionClick, handleKeyPress} = Hooks();
+    const {options,selectedOption, deviceType, setDeviceType, detectDeviceType, setSelectedOption,showOptions, setShowOptions,handleOptionClick, handleKeyPress} = Hooks();
 
   return (
     <div className="MintBlock">
@@ -51,7 +52,13 @@ export const MintBlock = () => {
             )}
           </div>
         </div>
-        <input type="text"  placeholder="0.00" onKeyPress={handleKeyPress}/>
+        <input
+              type="text"
+                onKeyPress={handleKeyPress}
+                pattern="[0-9]*\.?[0-9]*"
+                inputmode={deviceType === 'android' ? 'decimal' : ''}
+                placeholder="0.00"
+              />
         <div className="InputBalanceContainer">
           <div className="InputBalanceContainerAdditionalInfo">
             <button className="InputMaxBtn">Max</button>
@@ -74,7 +81,13 @@ export const MintBlock = () => {
       <DubInput/>
         <span>DUB</span>
       </div>
-      <input type="text" placeholder="0.00" onKeyPress={handleKeyPress}/>
+      <input
+              type="text"
+                onKeyPress={handleKeyPress}
+                pattern="[0-9]*\.?[0-9]*"
+                inputmode={deviceType === 'android' ? 'decimal' : ''}
+                placeholder="0.00"
+              />
       <div className='InputBalanceContainer SecondInputBalanceContainer'>
         <span className='SecondInputBalanceContainerAdditionalInfo'>Balance: 0.00 wDUB</span>
 
@@ -82,13 +95,23 @@ export const MintBlock = () => {
     </div>
     
   </div>
+  <MediaQuery minWidth={601}>
 <div className='MintRedeemBlockParagraph'>
 0.25% minting fee is applicable on all $DUB deposits. All slippage and extra costs are<br/>
  charged based on market conditions to the user. Estimates shown are an approximate.
 </div>
+</MediaQuery>
+
+<MediaQuery maxWidth={600}>
+<div className='MintRedeemBlockParagraph'>
+0.25% minting fee is applicable on all $DUB deposits. All slippage and<br/> 
+extra costs are charged based on market conditions to the user.<br/> 
+Estimates shown are an approximate.
+</div>
+</MediaQuery>
   <div className='InputMetamaskWrapper'>
-  <div className='InputMetamaskContainer '>
-    <div className="purpleDUB">
+  <div className='InputMetamaskContainer InputMintRedeemMetamaskContainer'>
+    <div className="purpleDUB purpleMintRedeemDUB">
   <WDubIcon/>
         <span>$DUB</span></div>
         <button className='InputMetamaskBtn'><img src={WMetamaskIcon}/><PlusIcon/></button>

@@ -4,6 +4,11 @@ import styled from 'styled-components';
 const Svg = styled.svg`
     width: 5.7vw;
     height: 4vmin;
+
+    @media (max-width:600px) {
+      width: 21.7vw;
+    height: 7vmin;
+    }
 `;
 
 export const ChainlinkLogo = () => {

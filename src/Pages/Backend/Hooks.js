@@ -62,5 +62,22 @@ export const Hooks = (count) => {
       }
     };
 
-  return { active, setActive, handleClick, isRedeemActive, setIsRedeemActive, isMintActive, randomColors, setRandomColors, getRandomColor, setIsMintActive, handleRedeemClick, handleMintClick, options,selectedOption, setSelectedOption,showOptions, setShowOptions,handleOptionClick, handleKeyPress}
+    const [deviceType, setDeviceType] = useState('');
+
+    const detectDeviceType = () => {
+      const userAgent = navigator.userAgent || navigator.vendor;
+      if (/android/i.test(userAgent)) {
+        return 'android';
+      }
+      if (/iPad|iPhone|iPod/.test(userAgent)) {
+        return 'ios';
+      }
+      return 'other';
+    };
+
+    useEffect(() => {
+      setDeviceType(detectDeviceType());
+    }, []);
+
+  return { active, setActive, handleClick, deviceType, setDeviceType, detectDeviceType, isRedeemActive, setIsRedeemActive, isMintActive, randomColors, setRandomColors, getRandomColor, setIsMintActive, handleRedeemClick, handleMintClick, options,selectedOption, setSelectedOption,showOptions, setShowOptions,handleOptionClick, handleKeyPress}
 }
