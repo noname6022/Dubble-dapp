@@ -11,6 +11,7 @@ import daiIcon from '../assets/CryptoCurrencies Icons/dai.svg'
 import AaveLogo from '../assets/CryptoCurrencies Icons/AaveLogo.webp'
 import ArbitrumLogo from '../assets/CryptoCurrencies Icons/ArbitrumLogo.webp'
 import { OpenInNewTab } from '../assets/OpenInNewTab'
+import MediaQuery from 'react-responsive'
 
 export const Dashboard = () => {
   const {active, setActive, handleClick, isRedeemActive, setIsRedeemActive,  randomColors, setRandomColors, getRandomColor, isMintActive, setIsMintActive, handleRedeemClick, handleMintClick} = Hooks()
@@ -46,7 +47,9 @@ export const Dashboard = () => {
     <div  className='DashboardWrapper'>
       <div className='DashboardHeaderContainer'>
         <div className='DashboardHeaderContainerText'><h1>Dashboard</h1></div>
+        <MediaQuery minWidth={601}>
         <div className='DashboardHeaderContainerAnimation'><DashboardChartIcon/></div>
+        </MediaQuery>
       </div>
       <div className='DashboardBlocks'>
         <div className='ProtocolDataBlock'>

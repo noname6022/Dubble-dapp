@@ -275,6 +275,39 @@
     margin-left: 8.1vw;
 }
 
+.ProfitBlock {
+  background-color: #E6E9E8;
+  border-radius: 4.7vmin;
+  color: #000;
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  justify-content: start;
+  grid-template-rows: 22.5vmin 6vmin;
+  user-select: none;
+  grid-area: 4;
+  margin-left: 0.2vw;
+}
+  
+    .ProfitBlock h3 {
+      font-weight: 500;
+      font-size: 5.1vw;
+      margin-left: 8.3vw;
+  }
+
+  .ProfitBlock h2 {
+    font-weight: 400;
+    font-size: 15.6vw;
+    margin-left: 8.1vw;
+}
+
+.DashboardActiveStrategy {
+  grid-template-rows: 32.5vmin 0vmin !important;
+      margin-top: -2.89vmin;
+      background-size: 100.15% 110%;
+      grid-area: 7;
+}
+
 .ActiveStrategyBlock {
   grid-template-rows: 31.5vmin 0.5vmin;
   border-radius: 4.7vmin;
@@ -309,6 +342,11 @@ margin-left: 8.1vw;
   grid-template-rows: 23vmin 4vmin 13vmin;
   padding: 0vmin;
   user-select: none;
+}
+
+.DashboardAPYBlock {
+  grid-area: 5;
+  margin-top: 0.5vmin;
 }
 
   .APYBlockBG h3 {
@@ -375,5 +413,62 @@ margin-left: 8.1vw;
   position: relative;
   bottom: -0.01vmin;
 }
+
+
+.BalanceBlock {
+  background-color: #5DBF75;
+  border-radius: 4.7vmin;
+  color: #000;
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  justify-content: start;
+  grid-template-rows: 20.8vmin 8vmin;
+  user-select: none;
+  grid-area: 6;
+  margin-left: 0;
+  margin-top: -1vmin;
+}
+
+.BalanceBlock h3 {
+  font-weight: 500;
+  font-size: 5.1vw;
+  margin-left: 8.3vw;
+}
+
+.BalanceBlock  h2 {
+font-weight: 400;
+font-size: 15.6vw;
+margin-left: 8.1vw;
+}
+
+.LRPBlock {
+  background-color: #E4D559;
+  border-radius: 4.7vmin;
+  color: #000;
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  justify-content: start;
+  grid-template-rows: 20.5vmin 7.5vmin;
+  user-select: none;
+  height: 40.6vmin;
+  grid-area: 8;
+  margin-left: 0;
+  margin-top: 0.5vmin;
+}
+
+.LRPBlock  h3 {
+  font-weight: 500;
+  font-size: 5.1vw;
+  margin-left: 8.3vw;
+}
+
+.LRPBlock  h2 {
+font-weight: 400;
+font-size: 15.6vw;
+margin-left: 8.1vw;
+}
+
 
     }

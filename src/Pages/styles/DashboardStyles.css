@@ -476,3 +476,224 @@ scrollbar-color: #575757 #b3b3b3 ;
         margin-top: 1.7vmin;
       }
   }
+
+  @media (max-width:600px) {
+    .DashboardWrapper {
+        display: grid;
+        grid-template-rows: 28.5vmin 383vmin 155vmin 30vmin;
+    }
+
+    .DashboardHeaderContainer{
+        border-bottom-left-radius: 9.57vmin;
+        border-bottom-right-radius: 9.57vmin;
+        grid-template-columns: auto;
+        align-items: center;
+    }
+
+    .DashboardHeaderContainerText {
+        margin-top: 2vmin;
+    }
+
+    .DashboardHeaderContainerText h1 {
+        font-family: 'Public Pixel', sans-serif;
+        font-size: 7vw;
+        letter-spacing: 1vw;
+        margin-left: 1vw;
+    }
+
+    .DataBlockText{
+        display: none;
+    }
+
+    .DashboardBlocks {
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: start;
+        grid-template-rows: 270vmin 110vmin;
+    }
+
+    .ProtocolDataBlock {
+        width: 95vw;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 0vmin 0vmin 40.4vmin 41vmin 42vmin 40vmin 41vmin 46vmin;
+        row-gap: 3.3vmin;
+        margin-left: 2.1vw;
+        margin-top: -2vmin;
+    }
+
+    .DashboardTotalValueBlock {
+        grid-area: 3;
+        margin-top: -1vmin;
+    }
+    
+    .CollateralContainer {
+        background-color: #919B9E;
+        border-radius: 4.7vmin;
+        width: 95.2vw;
+        display: grid;
+        grid-template-rows: 18vmin 83vmin;
+        height: 109.4vmin;
+        margin-left: 2vw;
+    }
+
+    .CollateralContainerHead {
+        display: grid;
+        grid-template-columns: 24.1vw 20.8vw 24.5vw 24vw;
+        align-items: center;
+        justify-items: center;
+        grid-template-rows: 14.3vmin 0vmin;
+    }
+
+    .CollateralContainerHead span {
+        color: #000;
+        font-size: 3.2vw;
+        font-weight: 500;
+        height: fit-content;
+        margin-top: 1vmin;
+    }
+    .CollateralContainerHead hr {
+        margin-left: 71vw;
+        width: 88.9vw;
+        border: 0;
+        border-top: 0.52vw solid black;
+    }
+
+    .CollateralContainerInfoValues {
+        display: grid;
+        grid-template-columns: 24.7vw 20.3vw 28.5vw 18vw;
+        align-items: center;
+        grid-template-rows: 27vmin 2vmin;
+        height: fit-content;
+    }
+
+    .CollateralContainerInfo {
+        display: grid;
+        grid-template-rows: 31.4vmin 35vmin 17vmin;
+    }
+    
+    .CollateralContainerInfo hr {
+        margin-left: 3.2vw;
+        width: 88.9vw;
+        border: 0;
+        border-top: 0.52vw solid black;
+    }
+
+    .CollateralContainerInfoCurrency {
+        display: grid;
+        grid-template-columns: 14vw 10vw;
+        align-items: center;
+        justify-items: end;
+    }
+
+    .CollateralContainerInfoCurrencyThird {
+        grid-template-columns: 14vw 9.67vw !important;
+    }
+
+    .CollateralContainerInfoCurrency span {
+        color: #000;
+        font-size: 3.2vw;
+        font-weight: 600;
+    }
+
+    .CollateralContainerInfoValues img {
+        width: 9vw;
+        height: 9vmin;
+        margin-top: 1.2vmin;
+    }
+
+
+
+    .CollateralContainerInfoValues span {
+        color: #000;
+        font-size: 3.2vw;
+        font-weight: 600;
+        height: fit-content;
+        margin-top: 2vmin;
+    }
+    
+    .CollateralContainerInfoValues b {
+    color: #000;
+    font-size: 3.2vw;
+    font-weight: 600;
+    height: fit-content;
+    margin-top: 2vmin;
+}
+
+
+
+    .ProgressContainer {
+        display: grid;
+        grid-template-columns: 11.7vw 6vw;
+        align-items: center;
+        justify-items: start;
+    }
+
+    .ProgressContainer progress[value] {
+        width: 9.3vw;
+    }
+
+    .ProgressContainer progress::-webkit-progress-bar {
+        border: 0;
+        height: 2.5vmin;
+        border-radius: 1.7vmin;
+        background-color: #FFF;
+      }
+    
+      .ProgressContainer progress::-webkit-progress-value {
+        border: 0;
+        height: 2.5vmin;
+        padding-left: 4.2vw;
+        border-radius: 1.3vmin;
+        background-color: red;
+    
+    }
+    
+    .greenProgress progress::-webkit-progress-value{
+        background-color: #79CE96 !important;
+    
+        
+    }
+    
+    .blueProgress progress::-webkit-progress-value{
+        background-color: #3A86D8  !important;
+    
+        
+    }
+    
+    .yellowProgress progress::-webkit-progress-value{
+        background-color: #E4D559 !important;
+    
+        
+    }
+    
+      .ProgressContainer progress::-moz-progress-bar {
+        border: 0;
+        height: 1.5vmin;
+        border-radius: 1.7vmin;
+        background-color: #FFF;
+        padding-left: 4.2vw;
+      }
+    
+      .StrategiesContainer {
+        background-color: #E6E9E8;
+        color: #000;
+        border-radius: 4.7vmin;
+        height: 145.4vmin;
+        width: 95.3vw;
+    }
+
+    .StrategiesWrapper {
+        margin-left: 2.05vw;
+        display: grid;
+        grid-template-rows: 14.56vmin 80.5vmin;
+        align-items: stretch;
+        width: fit-content;
+    }
+    .StrategiesInformationBlock {
+        overflow-y: scroll;
+        height: 125vmin;
+        overflow-x: hidden;
+    }
+
+  }
