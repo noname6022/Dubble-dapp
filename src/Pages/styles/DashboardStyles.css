@@ -232,7 +232,7 @@ display: none;
   .ProgressContainer progress::-webkit-progress-value {
     border: 0;
     height: 2.5vmin;
-    padding-left: 1vw;
+    padding-left: 1.2vw;
     border-radius: 1.3vmin;
     background-color: red;
 
@@ -666,10 +666,12 @@ scrollbar-color: #575757 #b3b3b3 ;
     
         
     }
+
+
     
       .ProgressContainer progress::-moz-progress-bar {
         border: 0;
-        height: 1.5vmin;
+        height: 3.5vmin;
         border-radius: 1.7vmin;
         background-color: #FFF;
         padding-left: 4.2vw;
@@ -690,10 +692,133 @@ scrollbar-color: #575757 #b3b3b3 ;
         align-items: stretch;
         width: fit-content;
     }
-    .StrategiesInformationBlock {
-        overflow-y: scroll;
-        height: 125vmin;
-        overflow-x: hidden;
+    
+    .StrategiesContainerHead {
+        display: grid;
+        grid-template-columns: 32vw 16.8vw 22vw 21vw;
+        align-items: center;
+        justify-items: start;
+        grid-template-rows: 14.3vmin 0vmin;
     }
 
+    .StrategiesContainerHead  span {
+        color: #000;
+        font-size: 2.8vw;
+        font-weight: 500;
+        height: fit-content;
+        margin-top: 1vmin;
+    }
+
+    .StrategiesContainerHead  span:nth-child(1) {
+        margin-left: 7vw;
+    }
+    .StrategiesContainerHead  hr {
+        margin-left: -36vw;
+        width: 88.9vw;
+        border: 0;
+        border-top: 0.52vw solid black;
+    }
+
+    .StrategiesInformationValues {
+        display: grid;
+        grid-template-columns: 28.7vw 22.3vw 23.5vw 18.7vw;
+        align-items: center;
+        grid-template-rows: 14.7vmin 3.14vmin;
+        height: fit-content;
+        justify-items: start;
+    }
+
+    .StrategiesInformationStrategy {
+        display: grid;
+        grid-template-columns: 9.25vw auto;
+        align-items: center;
+        justify-items: start;
+        margin-top: 3vmin;
+        margin-left: 3.8vw;
+    }
+
+    .StrategiesInformationValues img {
+        width: 9vw;
+        height: 9vmin;
+    }
+
+    .StrategiesInformationStrategy a {
+        color: #000;
+        font-size: 2.4vw;
+        font-weight: 600;
+        text-decoration: none;
+        display: grid;
+        grid-template-columns: auto 5vw;
+        align-items: center;
+    }
+
+    .StrategiesInformationChainName {
+        display: grid;
+        grid-template-columns: 9.3vw auto;
+        margin-top: 2vmin;
+        align-items: center;
+    }
+
+    .StrategiesInformationChainName span {
+        color: #000;
+        font-size: 2.43vw;
+        font-weight: 400;
+        margin-top: 3vmin;
+    }
+
+    .StrategiesInformationAssetValueNumber b {
+        color: #000;
+        font-size: 2.567vw;
+        font-weight: 400;
+        height: fit-content;
+    }
+
+    .StrategiesInformationChainLogo {
+        width: 8.5vw !important;
+        height: 9vmin !important;
+    }
+
+    .StrategiesInformationValues span {
+     color: #000;
+        font-size: 2.2vw;
+        font-weight: 600;
+        height: fit-content;
+        margin-top: 2vmin;
+    }
+
+    .StrategiesInformationValues hr {
+        border-top: 0.52vw solid black;
+        margin-left: 3.7vw;
+        width: 87.3vw;
+    }
+
+    .StrategiesInformationBlock{
+        overflow-y: scroll;
+        height: 111vmin;
+        overflow-x: hidden;
+        margin-top: 8vmin;
+        overflow-y: scroll;
+      margin-right: 1.5vw;    
+      scrollbar-width: auto;
+      scrollbar-color: #575757 #b3b3b3 ;
+      }
+      
+      
+      
+        /* Chrome, Edge, and Safari */
+        .StrategiesInformationBlock::-webkit-scrollbar {
+          width: 1vw;
+        }
+      
+        .StrategiesInformationBlock::-webkit-scrollbar-track {
+          background: #b3b3b3;
+          border-radius: 1vmin;
+        }
+      
+        .StrategiesInformationBlock::-webkit-scrollbar-thumb {
+          background-color: #575757;
+          border-radius: 1vmin;
+          border: 0px none #575757;
+        }
+        
   }
